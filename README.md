@@ -2,9 +2,9 @@
 
 # Daftar Bukti Fisik
 
-- III.A.1. 05022018-Menyusun Rencana Studi Kelayakan Pengolahan Data - OK 
-- III.A.2. 06022018-Melaksanakan Studi Kelayakan Pendahuluan Pengolahan Data - OK
-- III.C.1. Menyusun Studi Kelayakan Sistem Komputer - perlukah?
+- III.A.1. 190204-Menyusun Rencana Studi Kelayakan Pengolahan Data - OK 
+- III.A.2. 190215-Melaksanakan Studi Kelayakan Pendahuluan Pengolahan Data - OK
+- III.C.1. Menyusun Studi Kelayakan Sistem Komputer - OK
 - III.A.3. Melakukan Studi Kelayakan Rinci Pengolahan Data - OK
 - III.A.4. Melaksanakan Analisis Sistem Informasi - 
 - III.A.5. Merancang Pengujian Verifikasi atau Validasi Analisis Sistem Informasi - 
