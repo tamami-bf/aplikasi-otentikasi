@@ -20,7 +20,7 @@
                              % when including figure files
 %\usepackage{multicol}        % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
-\usepackage[english]{babel}
+\usepackage[bahasa]{babel}
 \usepackage{enumerate}
 \usepackage{paralist}
 \usepackage{float}
@@ -99,17 +99,15 @@ Kelayakan teknis menyoroti kebutuhan sistem yang telah disusun dari aspek teknol
 	
 Aspek yang paling dominan dari aspek kelayakan yang lain adalah kelayakan ekonomi. Tidak dapat disangkal lagi, motivasi pengembangan sistem informasi pada perusahaan atau organisasi adalah motif keuntungan. Dengan demikian aspek untung rugi jadi pertimbangan utama dalam pengembangan sistem. Kelayakan ekonomi berhubungan dengan \textit{return investmen} atau berapa lama biaya investasi dapat kembali, namun pada instansi pemerintah, yang secara umum bertugas melayani masyarakat, maka hubungannya bukan lagi untung rugi, tetapi lebih kepada imbas administrasi data yang tercatat dengan baik dan sedikit banyak mungkin berpengaruh pada peningkatan kepatuhan wajib pajak dalam memenuhi kewajiban pajaknya.	
 
-% sampai sini
-	
 	\item Faktor Kelayakan Hukum (\textit{Legal})
 	
 Menguraikan secara hukum apakah sistem informasi yang akan dikembangkan tidak menyimpang dari hukum yang berlaku (tidak melanggar hukum jika diterapkan di objek penelitian). Misal: bagaimana kelayakan perangkat lunak yang digunakan, bagaimana kelayakan hukum informasi yang dihasilkan oleh program aplikasi yang dibuat. Apakah melanggar hukum atau tidak.	
 	
 	\item Faktor Kelayakan Operasional (\textit{Operational})
 
-Penilaian terhadap kelayakan operasional digunakan untuk mengukur apakah sistem yang akan dikembangkan nantinya dapat dioperasikan dengan baik atau tidak untuk melayani masyarakat wajib pajak.	
+Penilaian terhadap kelayakan operasional digunakan untuk mengukur apakah sistem yang akan dikembangkan nantinya dapat dioperasikan dengan baik atau tidak untuk melayani kebutuhan otentikasi dan otorisasi.	
 	
-	\item Faktor Kelayakan Jadwal \textit{Schedule})
+	\item Faktor Kelayakan Jadwal (\textit{Schedule})
 	
 Penilaian kelayakan jadwal ini digunakan untuk menentukan bahwa pengembangan sistem akan dapat dilakukan dalam batas waktu yang telah ditetapkan.	
 	
@@ -120,9 +118,13 @@ Adapun penilaian untuk masing-masing faktor kelayakan TELOS ini adalah sebagai b
 \begin{enumerate}
 	\item Menilai kelayakan Teknik (\textit{Technical})
 	
-Kelayakan teknik menyoroti kebutuhan sistem yang telah disusun dari teknologi yang akan digunakan, untuk penerapan sistem informasi pembayaran untuk jenis pajak bumi dan bangunan sektor perdesaan dan perkotaan. Sistem informasi ini merupakan sistem berbasis \textit{web} yang digunakan oleh masyarakat wajib pajak melakukan verifikasi atau pengecekan pembayaran atas pajak terhutang. Sistem informasi dibangun berbasis \textit{web}, dengan tujuan agar seluruh wajib pajak dapat mengakses sistem informasi ini hanya dengan berbekal koneksi jaringan internet dan aplikasi \textit{browser} seperti Chrome, Firefox, Internet Explorer, Safari, atau jenis \textit{web browser} lainnya.
+Kelayakan teknik menyoroti kebutuhan sistem yang telah disusun dari teknologi yang akan digunakan, untuk penerapan sistem otentikasi di Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah. Sistem ini merupakan sistem berbasis layanan otentikasi yang digunakan oleh aplikasi yang akan dibangun yang datanya menggunakan data-data Pajak Daerah dan akses datanya terbatas untuk tiap jabatan pengguna, sehingga di masa mendatang, aplikasi yang dibangun tidak memerlukan bagian otentikasi, proses otentikasi cukup diserahkan ke sistem OAuth yang akan dibangun ini.
 
-Sistem ini pun tidak memerlukan banyak \textit{input}, pengguna cukup memberikan informasi Nomor Objek Pajak pada kolom yang telah disediakan, sehingga target pengguna yang diharapkan yaitu pengguna yang tidak memiliki keahlian khusus komputer pun dapat mengoperasikan sistem ini.
+Sistem ini nantinya akan menerima permintaan sebuah token dari aplikasi klien, yang apabila belum pernah masuk sama sekali, sistem akan menampilkan halaman masuk (\textit{login}) untuk memastikan bahwa pengguna (\textit{end-user}) sudah terdaftar dan memiliki hak untuk melakukan akses data. Apabila proses \textit{login} telah berhasil, maka aplikasi klien akan mendapatkan sebuah token yang dapat digunakan untuk melakukan akses data ke \textit{resource server}.
+
+Token yang diberikan oleh \textit{OAuth server} berbentuk JWT (\textit{JSON Web Token}) yang akan digunakan oleh aplikasi klien melakukan akses ke \textit{resource server}. Token dalam bentuk JWT ini sebetulnya sudah memiliki informasi yang cukup bagi aplikasi klien melakukan pengaturan akses bagi pengguna yang sedang melakukannya, tentunya aplikasi klien perlu melakukan \textit{decode} terlebih dahulu pada JWT yang diterima dari \textit{OAuth Server}.
+
+Token dalam bentuk JWT ini wajib selalu dikirimkan oleh aplikasi klien pada saat melakukan akses ke \textit{resource server}, hal ini untuk memastikan bahwa data yang berada di \textit{resource server} diakses oleh pengguna yang memiliki hak.
 
 \begin{enumerate}
 	\item Kebutuhan Perangkat Keras, Perangkat Lunak, dan Perangkat Jaringan
@@ -179,7 +181,9 @@ Kebutuhan akan perangkat lunak baru tentunya ada, tetapi tidak memerlukan biaya 
 		\hline
 		4 & Visual Studio Code & Editor \\
 		\hline
-		5 & Chrome, Firefox & Web Browser \\
+		5 & Docker & Container \\
+		\hline
+		6 & Chrome, Firefox & Web Browser \\
 		\hline
 	\end{tabular}
 \end{table}	
@@ -211,7 +215,7 @@ Kebutuhan akan perangkat jaringan pun tidak memerlukan pengadaan kembali, karena
 	
 	\item Arsitektur Jaringan Komputer
 	
-Arsitektur jaringan sistem informasi ini adalah seperti pada gambar \ref{fig:001-arsitektur-sistem}. Bila ada seorang pengguna yang melakukan akses dengan \textit{browser}, maka akan ditampilkan halaman 	utama dari sistem informasi ini. Akses ini oleh \textit{router} akan diarahkan ke \textit{server} aplikasi.
+Arsitektur jaringan sistem informasi ini adalah seperti pada gambar \ref{fig:001-arsitektur-sistem}. Bila ada seorang pengguna yang melakukan akses dengan \textit{browser}, maka akan ditampilkan halaman utama dari sistem informasi ini. 
 
 \begin{figure}[H]
 	\centering
@@ -220,7 +224,11 @@ Arsitektur jaringan sistem informasi ini adalah seperti pada gambar \ref{fig:001
 	\label{fig:001-arsitektur-sistem}
 \end{figure}
 
-Kemudian saat pengguna melakukan \textit{view} data terhadap nomor objek pajak tertentu, maka aplikasi akan melakukan \textit{request} data ke bagian \textit{back-end} yang selanjutnya bagian \textit{back-end} akan melakukan \textit{query} data ke sistem basis data. Setelah itu hasil yang didapatkan dari sistem basis data akan dikembalikan ke bagian \textit{front-end} untuk di olah dalam tampilan halaman \textit{web}.
+Nantinya, saat pengguna akan melakukan akses terhadap beberapa aplikasi yang terproteksi, pengguna akan diarahkan ke halaman \textit{login} milik \textit{OAuth Service} untuk mengisikan \textit{username} dan \textit{password}. 
+
+Setelah proses otentikasi berhasil dilakukan, selanjutnya halaman pada peramban (\textit{browser}) akan dikembalikan ke halaman aplikasi yang akan diakses, dimana proses yang berjalan dibelakang layar adalah \textit{OAuth Service} akan memberikan sebuah \textit{token} ke aplikasi klien untuk disimpan dan digunakan setiap akan melakukan proses permintaan data (\textit{request}) ke \textit{Resource Service}. 
+
+Selanjutnya, saat pengguna akan melakukan akses data melalui halaman aplikasi \textit{web} klien, aplikasi ini akan melakukan permintaan (\textit{request}) data ke \textit{resource service} dengan membawa data dan \textit{token}, yang kemudian \textit{resource service} akan melakukan verifikasi hak akses melalui \textit{token} tersebut, apabila hak akses tidak sesuai, maka akan mengembalikan pesan kesalahan bahwa permintaan atau \textit{request} tersebut tidak dapat dipenuhi, namun bila hak aksesnya sesuai, maka data akan dikirimkan ke aplikasi klien untuk ditampilkan ke pengguna.
 	
 \end{enumerate}
 
@@ -229,7 +237,7 @@ Adapun kondisi sistem informasi yang digunakan saat ini adalah seperti berikut :
 \begin{enumerate}
 	\item Sistem Aplikasi 
 	
-Aplikasi adalah sebuah \textit{tools} untuk membantu dan mempermudah suatu aktifitas administrasi maupun yang lainnya. Tanpa adanya aplikasi, tentu suatu aktifitas tidak bisa diselesaikan dengan cepat, segala sesuatunya dilakukan dengan pencatatan manual. Aplikasi atau sistem informasi yang digunakan di Badang Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes saat ini adalah :
+Aplikasi adalah sebuah \textit{tools} untuk membantu dan mempermudah suatu aktifitas administrasi maupun yang lainnya. Tanpa adanya aplikasi, tentu suatu aktifitas tidak bisa diselesaikan dengan cepat, segala sesuatunya dilakukan dengan pencatatan manual. Aplikasi atau sistem informasi yang digunakan di Bidang Pendataan dan Penetapan pada Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes saat ini adalah :
 
 \begin{table}[H]
 	\centering
@@ -239,12 +247,18 @@ Aplikasi adalah sebuah \textit{tools} untuk membantu dan mempermudah suatu aktif
 		\hline
 		1 & SISMIOP & Melakukan manajemen objek pajak PBB-P2 \\
 		\hline
-		2 & Microsoft Excel & Digunakan untuk mengolah data peralihan hak \\
+		2 & Simda Pendapatan & Melakukan pengelolaan pajak daerah \\
+		\hline
+		3 & Microsoft Excel & Digunakan untuk merekam dan mengolah data peralihan hak \\
 		\hline
 	\end{tabular}
 \end{table}
 
-Dengan adanya sistem informasi atau aplikasi tersebut, sudah membantu dari mulai manajemen pelayanan pajak bumi dan bangunan sektor perdesaan dan perkotaan, penetapan, penagihan, hinga ke prosedur pembayaran, namun demikian, sistem yang ada tidak memungkinkan informasi pembayarannya diakses oleh publik, maka dari itu dibutuhkan sistem atau aplikasi lain agar masyarakat wajib pajak mengetahui status pembayarannya, dengan tanpa melakukan prosedur instalasi apapun.
+Dengan adanya sistem informasi atau aplikasi SISMIOP, sudah membantu pengelolaan pajak daerah untuk jenis Pajak Bumi dan Bangunan sektor Perdesaan dan Perkotaan dari mulai manajemen pelayanan, pendataan,  penetapan, penagihan, hingga ke prosedur pembayaran.
+
+Sedangkan aplikasi Simda Pendapatan, sudah dapat membantu melakukan pengelolaan pajak daerah untuk jenis pajak selain Pajak Bumi dan Bangunan sektor Perdesaan dan Perkotaan, namun belum sepenuhnya dapat melakukan pengelolaan yang terjadi pada jenis Bea Perolehan Hak Atas Tanah dan Bangunan.
+
+Dengan semakin bertambahnya kebutuhan organisasi akan aplikasi atau sistem informasi kedepan, maka akan semakin bertambah pula otentikasi dan otorisasi untuk tiap penggunanya, untuk mengantisipasi kondisi seperti ini, maka kebutuhan untuk membangun sebuah sistem OAuth diperlukan sehingga nantinya tiap pengguna tidak perlu melakukan \textit{login} berulang-ulang untuk melakukan akses ke beberapa aplikasi yang terproteksi.
 	
 	\item Sistem Basis Data
 	
@@ -268,6 +282,12 @@ Basis data yang digunakan masih belum terintegrasi dengan baik, karena penerimaa
 Sebetulnya sumber data yang digunakan pada pengelolaan Pajak Bumi dan Bangunan sektor Perdesaan dan Perkotaan ada pada 2 (dua) tempat, yang pertama berada di Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes, yang kedua berada di BPD Jateng.
 
 Kondisi data yang berada di Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah berfungsi sebagai pendataan dan penetapan, namun realisasi pembayaran menggunakan data dari BPD Jawa Tengah. Selisih nilai antara 2 (dua) sumber data ini pasti terjadi, maka seharusnya dibutuhkan personil untuk melakukan pencocokan / rekonsiliasi data antara 2 (dua) sumber data tersebut agar data yang ditampilkan pada sistem informasi yang akan dibangun menjadi lebih lengkap.
+
+Untuk membangun sistem OAuth nantinya membutuhkan sistem basis data yang tentunya terpisah dari sistem yang telah ada, pengunaan sistem basis datanya pun tidak memerlukan biaya tambahan karena menggunakan sistem basis data yang gratis dan sudah teruji kehandalannya. Basis data ini nantinya akan merekam daftar pengguna dan kata kuncinya (\textit{password}) termasuk statusnya apakah sebagai pengguna yang statusnya aktif, atau pengguna yang statusnya di non-aktifkan, yang artinya tidak dapat melakukan akses masuk ke data-data yang terproteksi.
+
+Pada sistem basis data yang digunakan OAuth ini pun akan merekam data aplikasi klien yang terdaftar yang dijinkan melakukan akses ke \textit{resource server} yang terproteksi.
+
+Dilihat dari sisi teknis sistem basis data yang akan digunakan cukup handal, terbukti dengan banyaknya perusahaan besar menggunakan basis data ini dan tersedia secara gratis, maka syarat kebutuhannya sangat mencukupi untuk membangun sistem OAuth.
 	
 	\item Infrastruktur
 	
@@ -290,11 +310,11 @@ Infrastruktur merupakan sarana yang sangat dibutuhkan dalam sebuah aktifitas apa
 	\end{tabular}
 \end{table}
 
-Dari kondisi infrastruktur di atas, sebetulnya Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah cukup untuk membuka atau melayani sebuah sistem informasi status pembayaran Pajak Bumi dan Bangunan Sektor Perdesaan dan Perkotaan yang akan dibangun.
-
-Melihat kondisi teknis demikian, dimana sistem belum pernah dibuat, teknologi yang digunakan terbilang cukup baru, sehingga nilai kelayakan teknik yang dapat diberikan adalah 9.0.
+Dari kondisi infrastruktur di atas, sebetulnya Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah secara infrastruktur, syarat kebutuhannya sangat mencukupi untuk membangun sistem OAuth yang dapat digunakan sebagai pendukung aplikasi yang akan dibangun kedepannya.
 	
 \end{enumerate}
+
+Melihat kondisi teknis demikian, dimana sistem belum pernah dibuat, teknologi yang digunakan terbilang cukup baru, sehingga nilai kelayakan teknik yang dapat diberikan adalah 9.0.
 	
 	\item Menilai kelayakan Ekonomi (\textit{Economic})
 	
@@ -335,9 +355,9 @@ Manfaat yang didapat dari sistem informasi diklasifikasi sebagai berikut :
 	\item Keuntungan tak berwujud, adalah keuntungan yang sulit atau tidak mungkin diukur dalam bentuk satuan uang. Keuntungan tersebut antara lain :
 	
 	\begin{enumerate}
-		\item Peningkatan kepatuhan wajib pajak
+		\item Peningkatan efisiensi waktu pengerjaan
 		\item Peningkatan efektifitas pegawai
-		\item Peningkatan kepuasan masyarakat
+		\item Peningkatan pelayanan pajak daerah
 	\end{enumerate}
 \end{enumerate}	
 
@@ -358,15 +378,15 @@ Metode ini adalah uji kuantitatif yang digunakan untuk menghitung jangka waktu y
 Perhitungan Periode Pengembalian adalah seperti berikut :
 
 Nilai Investasi = Rp0,-
-Proses Th 1 = Rp30.000.000.000,-
+Proses Th 1 = Rp100.364.100.000,-
 
-Nilai investasi memang bernilai 0 (nol) rupiah karena seluruh sarana dan prasarana telah tersedia, hanya tinggal membangun sebuah sistem informasi untuk digunakan dan dijalankan. Sedangkan nilai Rp30.000.000.000,- (Tiga puluh milyar) didapat dari nilai target penerimaan jenis pajak bumi dan bangunan sektor perdesaan dan perkotaan.
+Nilai investasi memang bernilai 0 (nol) rupiah karena seluruh sarana dan prasarana telah tersedia, hanya tinggal membangun sebuah sistem informasi untuk digunakan dan dijalankan. Sedangkan nilai Rp100.364.100.000,- (Seratus milyar tiga ratus enam puluh empat juta seratus ribu) didapat dari nilai target penerimaan untuk seluruh jenis Pajak Daerah di Kabupaten Brebes.
 
-\[ PP = \frac{0}{30.000.000.000} \]
+\[ PP = \frac{0}{100.364.100.000} \]
 
 \[ PP = 0 tahun \]
 
-Artinya, karena nilai investasi yang dikeluarkan nihil sama sekali, atau dengan kata lain tidak memerlukan nilai investasi, namun sistem informasi secara tidak langsung memberikan andil terhadap realisasi sebesar 30 Milyar Rupiah kepada Kas Daerah. Artinya sistem ini sangat layak untuk dikembangkan karena pengembalian tidak membutuhkan waktu untuk mencapai titik impas.
+Artinya, karena nilai investasi yang dikeluarkan nihil sama sekali, atau dengan kata lain tidak memerlukan nilai investasi, namun sistem informasi secara tidak langsung memberikan andil terhadap realisasi sebesar kurang lebih 100 Milyar Rupiah kepada Kas Daerah. Artinya sistem ini sangat layak untuk dikembangkan karena pengembalian tidak membutuhkan waktu untuk mencapai titik impas.
 	
 	\item Metode Pengembalian Investasi
 	
@@ -381,9 +401,9 @@ Metode pengembalian investasi digunakan untuk mengukur presentase manfaat yang d
 
 \[ ROI = \frac{Total Manfaat - Total Biaya}{Total Biaya} x 100\% \]
 	
-Karena nilai biaya tidak akan pernah muncul, maka bisa disebut bahwa Total Biaya = 0 (nol), Total Manfaat adalah penerimaan realisasi Pajak Bumi dan Bangunan sektor Perdesaan dan Perkotaan dalam satu tahun pajak, yaitu senilai 30 Milyar rupiah. Maka hasil yang didapatkan adalah seperti berikut :
+Karena nilai biaya tidak akan pernah muncul, maka bisa disebut bahwa Total Biaya = 0 (nol), Total Manfaat adalah penerimaan realisasi untuk seluruh jenis pajak daerah dalam satu tahun pajak, yaitu senilai 100.364.100.000 rupiah. Maka hasil yang didapatkan adalah seperti berikut :
 
-\[ ROI = \frac{30 M - 0}{0} x 100\% \]
+\[ ROI = \frac{100.364.100.000 - 0}{0} x 100\% \]
 
 \[ ROI = \infty \]
 
@@ -400,7 +420,7 @@ Kriteria NPV ini adalah seperti berikut :
 \begin{itemize}
 	\item NPV $>$ 0 : \textit{Feasible}
 	\item NPV = 0 : \textit{Indifferent}
-	\item NPV $<$ 0 : \textit{Unfesible}
+	\item NPV $<$ 0 : \textit{Unfeasible}
 \end{itemize}
 
 Rumus untuk menghitung NPV ini adalah seperti berikut :
@@ -417,12 +437,12 @@ dimana :
 
 Sehingga perhitungannya dapat kita cari seperti berikut :
 
-\[ NPV = - 0 + \frac{30 M}{(1 + 6.5\%)^1} \]
+\[ NPV = - 0 + \frac{100.364.100.000}{(1 + 6,0\%)^1} \]
 
-\[ NPV = - 0 + \frac{30 M}{1.065} \]
+\[ NPV = - 0 + \frac{100.364.100.000}{1,06} \]
 
-\[ NPV =  28.169.014.084.51 \]
-Pada perhitungan di atas, nilai waktu dari bunga uang yang ditanamkan adalah 6,5\% berdasarkan suku bunga dari www.bi.go.id pada tanggal 21 Juli 2016. Karena nilai NPV $>$ 0 berarti investasi dapat diterima dan layak untuk dikembangkan.
+\[ NPV =  94.683.113.207,55 \]
+Pada perhitungan di atas, nilai waktu dari bunga uang yang ditanamkan adalah 6,0\% berdasarkan suku bunga dari www.bi.go.id pada tanggal 17 Januari 2019. Karena nilai NPV $>$ 0 berarti investasi dapat diterima dan layak untuk dikembangkan.
 	
 \end{enumerate}
 
@@ -452,12 +472,16 @@ Adapun rincian perangkat lunak secara hukum adalah sebagai berikut :
 	\hline
 	4 & Visual Studio Code & Gratis, MIT \\
 	\hline
+	5 & Docker & Gratis, Apache 2.0 \\
+	\hline
+	6 & Git & Gratis, LGPLv2.1 \\ 
+	\hline
 	
 \end{tabular}
 \end{table}
 
-Karena sistem informasi yang akan dibangun tidak meliputi data sensitif, seperti data detail wajib pajak, dan pada saat melakukan akses diperlukan Nomor Objek Pajak yang hanya wajib pajak saja yang memiliki, sehingga nilai untuk kelayakan hukum ini adalah 9,0.
-	
+Karena sistem informasi yang akan dibangun bertujuan untuk melakukan proteksi terhadap data-data sensitif milik Pemerintah Daerah, dalam hal ini adalah data-data yang berkaitan dengan data diri wajib pajak untuk kegiatan preventif penyalah gunaan data, maka nilai untuk kelayakan hukum dari dibangunnya sistem OAuth ini adalah 9,0.
+
 	\item Menilai kelayakan Operasional (\textit{Operational})
 		
 Kelayakan operasional dinilai dengan menggunakan kerangka kerja PIECES yang merupakan singkatan dari \textit{Performance}, \textit{Information}, \textit{Economy}, \textit{Control}, \textit{Efficiency}, dan \textit{Services}. Kerangka kerja PIECES ini dikembangkan oleh James Wetherbe yang bertujuan mengukur apakah sistem yang akan dikembangkan dapat dioperasikan dengan baik atau tidak di dalam organisasi.
@@ -467,42 +491,49 @@ Penjelasan untuk masing-masing poin dalam kerangka kerja PIECES ini adalah seper
 \begin{itemize}
 	\item \textit{Performance} atau kinerja adalah untuk mengetahui apakah sistem menyediakan \textit{throughput} dan \textit{response time} yang cukup. Perbandingannya adalah seperti berikut ini :
 	
-	\begin{table}[H]
+	\begin{table}[!h]
 		\centering
 		\begin{tabular}{| p{7cm} | p{7cm} |}
 			\hline
 			Sistem Lama & Sistem Baru \\
 			\hline
-			Waktu yang dibutuhkan untuk melakukan pengambilan data pembayaran untuk tiap Nomor Objek Pajak membutuhkan waktu cukup lama karena banyaknya menu & Waktu yang dibutuhkan untuk mencari informasi objek pajak berdasarkan Nomor Objek Pajak relatif singkat. \\
+			Waktu yang dibutuhkan untuk mengembangkan beberapa aplikasi yang memerlukan otentikasi akan selalu berulang menghadapi fase untuk membangun sebuah halaman otentikasi / \textit{login} & Waktu yang dibutuhkan untuk membangun beberapa sistem aplikasi yang membutuhkan otentikasi menjadi lebih singkat karena fase untuk membangun halaman otentikasi sudah tidak diperlukan, hanya melakukan konfigurasi pendaftaran aplikasi klien pada \textit{OAuth Service}, sementara nama penggunanya, cukup dilakukan konfigurasi tambahan tanpa perlu mendaftarkannya dari awal. \\
 			\hline
 		\end{tabular}
 	\end{table}
 	
+	Dari sisi \textit{performance} atau kinerja tentu saja layak untuk menjadi pertimbangan dibangunnya sistem ini karena menghemat waktu dan tenaga pada fase membangun sistem otentikasi yang membutuhkan otentikasi kedepannya, fase ini dapat kita lewati tanpa mengurangi pembatasan akses terhadap beberapa pengguna yang terdaftar sesuai dengan kewenangannya pada aplikasi klien.
+	
+	
 \item \textit{Information} atau informasi adalah untuk mengetahui apakah sistem menyediakan informasi yang berkualitas bagi pengguna. 
 
-\begin{table}
+\begin{table}[!h]
 	\centering
 	\begin{tabular}{| p{7cm} | p{7cm} |}
 		\hline
 		Sistem Lama & Sistem Baru \\
 		\hline
-		Informasi yang disajikan hanya dapat diakses oleh pegawai internal dan melalui aplikasi \textit{desktop} & Informasi dapat diakses oleh siapa saja pemegang Nomor Objek Pajak \\
+		Bila ingin melihat informasi mengenai status dan hak akses pengguna, karena masing-masing aplikasi memiliki daftar nama pengguna dan masing-masing hak aksesnya, maka seorang administrator yang akan melihat informasi daftar nama pengguna dan hak aksesnya perlu melakukan akses terhadap aplikasi yang sedang digunakan, apabila ingin melihat daftar pengguna dan hak akses diaplikasi lainnya, maka perlu melakukan akses ke aplikasi tersebut & Bila ingin mendapatkan informasi mengenai daftar nama pengguna serta status dan hak aksesnya, maka cukup melakukan akses ke satu aplikasi saja, informasi yang disajikan akan lengkap dari daftar nama pengguna yang sudah ada, berikut hak akses pada masing-masing aplikasi klien yang juga dapat dilihat daftarnya di aplikasi yang sama \\
 		\hline
 	\end{tabular}
 \end{table}
 
+Dari sisi \textit{Information} atau informasi, sistem ini layak dibangun karena akan mempermudah pekerjaan yang ditugaskan kepada seorang administrator sistem, personil ini tidak perlu melakukan akses ke seluruh aplikasi apabila ada perubahan struktur organisasi, cukup melakukan akses ke satu aplikasi \textit{OAuth Service} ini, kemudian melakukan perubahan nama pengguna atau hak aksesnya untuk seluruh aplikasi klien yang terdaftar.
+
 \item \textit{Economy} atau ekonomi adalah untuk mengetahui apakah sistem menawarkan tingkat dan kapasitas pelayanan yang memadai untuk mengurangi biaya dan meningkatkan keuntungan. Berikut adalah perbandingan dari sistem lama dan baru :
 
-\begin{table}	
+\begin{table}[H]	
 	\centering
 	\begin{tabular}{| p{7cm} | p{7cm} |}
 		\hline 
 		Sistem Lama & Sistem Baru \\
 		\hline
-		Biaya yang dikeluarkan tinggi, karena terkadang wajib pajak meminta versi cetak-nya & Biaya yang dikeluarkan relatif rendah, karena wajib pajak dapat melakukan akses mandiri terhadap datanya. \\
+		Biaya yang dikeluarkan lebih besar karena daftar nama pengguna serta hak aksesnya akan tersimpan dalam setiap basis data yang digunakan oleh masing-masing aplikasi, tentunya akan mempengaruhi penggunaan ruang pada \textit{storage} atau \textit{harddisk} yang lebih besar & Biaya yang dikeluarkan relatif rendah, karena daftar nama pengguna serta hak aksesnya berada dalam satu ruang basis data untuk seluruh aplikasi yang dibangun, tentunya karena daftar pengguna berikut hak aksesnya berada dalam satu basis data, maka penggunaan ruang pada \textit{storage} atau \textit{harddisk} akan lebih kecil. \\
 		\hline		
 	\end{tabular}
 \end{table}
+
+Dari sisi \textit{economy} atau ekonomi, sistem ini pun layak dibangun karena akan melakukan penghematan tanpa mengurangi fiturnya sebagai pengaman aplikasi, karena seluruh daftar pengguna dan hak aksesnya, serta daftar aplikasi klien yang dapat terhubung berada dalam satu sistem basis data saja, ini akan mempengaruhi penggunaan yang lebih hemat dari perangkat \textit{storage} atau \textit{harddisk}.
 
 \item \textit{Control} atau pengendalian adalah untuk mengetahui apakah sistem informasi yang dibangun menawarkan kontrol atau pengendalian untuk mengatasi kecurangan-kecurangan dan untuk menjamin keakuratan dan keamanan data. Berikut adalah perbandingan sistem yang lama dan sistem yang baru :
 
@@ -512,12 +543,12 @@ Penjelasan untuk masing-masing poin dalam kerangka kerja PIECES ini adalah seper
 	 	\hline
 		Sistem Lama & Sistem Baru \\
 		\hline
-		Hanya dapat diakses oleh pengguna yang terdaftar pada sistem informasi SISMIOP & Data dapat diakses oleh siapapun yang mengetahui Nomor Objek Pajak yang akan dicari \\
+		Data hanya dapat diakses oleh pengguna yang memiliki hak atas sistem tersebut karena masing-masing aplikasi memiliki daftar pengguna beserta hak aksesnya, namun di beberapa sistem lama seperti SISMIOP, saat ada pengguna atau person yang melakukan akses terhadap sistem basis datanya secara langsung melalui SQL (\textit{Structured Query Language}), maka kata kunci untuk masing-masing pengguna akan terlihat jelas apa adanya dan rawan untuk disalahgunakan oleh pihak yang tidak bertanggung jawab & Sistem yang akan dibangun pun tidak akan mengurangi fungsinya sebagai pengaman untuk melakukan proteksi terhadap data yang terrekam, masing-masing pengguna yang terdaftar nantinya akan mendapatkan hak akses sesuai dengan kewenangannya pada organisasi, apabila ada pengguna atau person yang melakukan akses langsung pada sistem basis data, termasuk seorang adminsitrator sistem, tidak akan dapat melihat secara langsung kata kunci bagi setiap pengguna, langkah yang dilakukan apabila ada pengguna yang lupa akan kata kuncinya, adalah dengan cara melakukan \textit{reset} terhadap nama pengguna tersebut. \\
 		\hline
 	\end{tabular}
 \end{table}
 
-Namun akses datanya hanya dapat dilihat saja, tidak dapat merubah data yang ditampilkan.
+Terlihat dari sisi \textit{Control} atau pengendalian adalah bahwa sistem OAuth yang akan dikembangkan layak untuk dibangun karena selain menawarkan kontrol atau pengendalian yang lebih baik yang berada pada satu tempat, juga melakukan penjagaan terhadap keamanan data dengan lebih baik, termasuk data mengenai kata kunci pengguna yang telah terdaftar itu sendiri.
 
 \item \textit{Efficiency} atau efisiensi adalah untuk mengetahui apakah sistem menggunakan secara maksimum sumber yang tersedia termasuk orang, waktu aliran \textit{form}, meminimalkan penundaan proses. Berikut adalah perbandingan sistem informasi yang lama dan sistem informasi yang baru :
 
@@ -527,10 +558,12 @@ Namun akses datanya hanya dapat dilihat saja, tidak dapat merubah data yang dita
 		\hline
 		Sistem Lama & Sistem Baru \\
 		\hline
-		Wajib pajak harus datang ke kantor hanya untuk mengetahui status pembayaran atau perubahan nama pada Surat Pemberitahuan Pajak Terhutangnya & Wajib pajak dapat melakukan pemeriksaan secara mandiri terhadap data miliknya berdasarkan Nomor Objek Pajak. \\
+		Dinilai kurang efisien karena terdapat data \textit{redundant} terhadap data pengguna beserta hak aksesnya yang tersimpan pada setiap sistem basis data dari aplikasi yang digunakan. Dengan nama pengguna yang sama saja, apabila ada 2 (dua) atau lebih aplikasi yang dibangun, maka tiap pengguna akan didaftarkan pada 2 (dua) atau lebih aplikasi sesuai dengan kewenangannya pada organisasi & Terlihat lebih efisien karena tiap pengguna hanya akan memiliki satu data nama pengguna dan hak aksesnya. Satu data ini, informasi nama pengguna dan hak aksesnya dapat digunakan untuk seluruh aplikasi klien yang terdaftar, kemudian aplikasi klien yang dibangun tidak perlu lagi membuat modul otentikasi lagi, karena prosesnya akan ditangani oleh OAuth Service \\
 		\hline
 	\end{tabular}
 \end{table}
+
+Dari sisi efisiensi pun aplikasi otentikasi ini layak untuk dibangun dan dikembangkan karena akan menggunakan sumber daya yang tersedia dengan lebih efisien tanpa redundansi data, selain itu tidak mengurangi performa sehingga tidak akan menjadi kendala dalam melakukan proses datanya.
 
 \item \textit{Services} atau pelayanan adalah untuk mengetahui apakah sistem menyediakan layanan yang diinginkan dan handal pada siapa saja yang menginginkannya, dan apakah sistem fleksibel dan dapat dikembangkan. Berikut adalah perbandingannya antara sistem lama dan sistem baru :
 
@@ -540,20 +573,22 @@ Namun akses datanya hanya dapat dilihat saja, tidak dapat merubah data yang dita
 		\hline
 		Sistem Lama & Sistem Baru \\
 		\hline
-		Pelayanan sangat membebani wajib pajak yang harus datang ke kantor dan mengantri bila ada antrian hanya untuk mengetahui data pembayarannya & Wajib pajak cukup melakukan akses dari mana pun berdasarkan Nomor Objek Pajak untuk mengetahui data pembayarannya \\
+		Sistem telah menyediakan layanan yang handal namun terbatas pada masing-masing aplikasi yang berkaitan saja dengan sistem otentikasi tersebut, dengan kata lain tidak dapat digunakan untuk berbagai macam aplikasi klien yang berbeda & Sistem akan menyediakan layanan yang handal dan fleksibel untuk dapat dikembangkan ke berbagai aplikasi yang nantinya membutuhkan sistem otentikasi, tentu saja dengan semakin bertambahnya data yang terrekam dalam sistem informasi pajak daerah, akan semakin bertambah pula kebutuhan akan pengolahan dan pengelolaan datanya, maka akan semakin banyak aplikasi yang dibutuhkan dalam rangka kemudahan akses data,  \\
 		\hline
 	\end{tabular}
 \end{table}
-	
+
+Dari sisi \textit{services} atau layanan tentu saja sistem otentikasi yang akan dibangun jauh lebih fleksibel dan dapat dikembangkan dibanding sistem lama yang cenderung layanan otentikasinya akan spesifik terhadap masing-masing aplikasi yang dilayaninya, dan dapat kita berikan status layak terhadap pengembangan aplikasi otentikasi ini.
+
 \end{itemize}
 
-Karena sistem berbasis \textit{web} dan banyak pengguna, serta tidak memerlukan keahlian khusus untuk melakukan operasinya. Maka nilainya kita berikan 7,0.
-	
+Setelah kita kaji kelayakan dari sisi operasional secara keseluruhan, dari setiap kerangka kerja PIECES yang menyatakan bahwa sistem otentikasi ini layak untuk dibangun dan dikembangkan dari tiap bagiannya, maka dari faktor kelayakan operasional pun akan kita berikan nilai 9,0.
+
 	\item Menilai kelayakan Jadwal (\textit{Schedule})
 	
-Kelayakan jadwal digunakan untuk menentukan bahwa pengembangan sistem dapat dilakukan dalam batas waktu yang telah ditetapkan. Pengembangan sistem direncanakan selesai dalam waktu maksimal $\pm$ 9 minggu. Adapun perkiraan tahap-tahap pengembangan sistem dijadwalkan sebagai berikut :
+Kelayakan jadwal digunakan untuk menentukan bahwa pengembangan sistem dapat dilakukan dalam batas waktu yang telah ditetapkan. Pengembangan sistem direncanakan selesai dalam waktu maksimal $\pm$ 11 (sebelas) minggu. Adapun perkiraan tahap-tahap pengembangan sistem dijadwalkan sebagai berikut :
 
-Dalam proyek pengembangan sistem informasi Pembayaran Pajak Bumi dan Bangunan Sektor Perdesaan dan Perkotaan dilakukan dalam 9 (sembilan) tahap, yaitu :
+Dalam proyek pengembangan sistem otentikasi di Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes dilakukan dalam 9 (sembilan) tahap, yaitu :
 
 \begin{enumerate}
 	\item Tahap analisa kebutuhan sistem 
@@ -578,16 +613,16 @@ Grafik \textit{Gantt} untuk tahapan-tahapan tersebut adalah seperti pada gambar 
 \end{figure}
 
 Karena pengembangan diukur dalam jam, hari, minggu, dan bulan maka kesalahan perkiraan (\textit{error estimation}) yang dibutuhkan untuk perancangan dan implementasi menjadi kecil. Maka nilainya 8.0
-	
+
 \end{enumerate}
 
 Dari keseluruhan faktor kelayakan TELOS tersebut, jumlah dari semua faktornya adalah 
 
-\[ Total = 9 + 9 + 9 + 7 + 8 \]
+\[ Total = 9 + 9 + 9 + 9 + 8 \]
 
 \[ Total = 44 \]
 
-Total score dari kelayakan ini adalah :
+Total \textit{score} dari kelayakan ini adalah :
 
 \[ score = 44 / 5 = 8,8 \]
 
@@ -598,43 +633,52 @@ Artinya perancangan pengembangan sistem informasi yang dievaluasi adalah LAYAK d
 Kebutuhan akan sarana dan prasarana untuk jenis perangkat keras yaitu :
 
 \begin{enumerate}
-	\item Peladen (\textit{server}) Basis Data
+	\item Peladen (\textit{server}) 
 	
-Peladen atau \textit{server} ini berfungsi untuk menyimpan basis data hasil proses penetapan yang menghasilkan nilai pajak terhutang untuk pajak bumi dan bangunan sektor perdesaan dan perkotaan, untuk nantinya dapat diakses oleh peladen (\textit{server}) aplikasi \textit{web} yang menyediakan sebuah API (\textit{Application Programming Interface}) untuk diakses oleh aplikasi \textit{web} dan aplikasi \textit{mobile} yang juga akan dibangun.
+Peladen atau \textit{server} berfungsi sebagai basis jalannya layanan-layanan aplikasi yang nantinya akan dibangun, nantinya tiap layanan aplikasi akan berjalan pada \textit{container} Docker.
 
-Kebutuhan perangkat keras peladen ini tidak perlu membeli karena nantinya akan menggunakan peladen yang sudah ada sebagai peladen basis data untuk aplikasi SISMIOP (Sistem Manajemen Informasi Objek Pajak) yang sudah beroperasi.
-	
-	\item Peladen (\textit{server}) \textit{web} aplikasi
-	
-Peladen ini akan digunakan sebagai tempatnya aplikasi \textit{web} yang menyediakan API (\textit{Application Programming Interface})	untuk aplikasi \textit{web} Angular dan aplikasi \textit{mobile}.
+Secara keseluruhan, inti dari aplikasi ini akan berjalan pada 4 (empat) \textit{container}, yang secara ringkas dapat dijelaskan seperti berikut :
 
-Peladen ini juga akan menjadi tempat aplikasi \textit{web} bagian ujung depan (\textit{front-end}) berada. Aplikasi ujung depan (\textit{front-end}) dengan aplikasi ujung belakang (\textit{back-end}) yang bisa kita sebut peladen API (\textit{Application Programming Interface}) adalah 2 (dua) aplikasi yang berbeda fungsi, berbeda bahasa pemrograman, yang dibangun secara mandiri tetapi saling berkomunikasi dalam sebuah sistem.
+\begin{enumerate}
 
-Peladen ini pun tidak perlu membeli karena nantinya akan menggunakan peladen yang sudah disediakan sebagai peladen aplikasi \textit{web}.
+	\item \textit{Container} pertama akan melayani \textit{service} otentikasi, dimana halaman \textit{login} akan berada pada layanan ini, termasuk pemberian token yang digunakan oleh aplikasi klien untuk melakukan akses pada \textit{resource server}. 
 	
+	\item \textit{Container} kedua berupa layanan basis data yang secara langsung akan terhubung dengan \textit{OAuth Service} atau layanan otentikasi pada \textit{container} pertama dan \textit{resource server}. Dalam layanan basis data ini tersimpan daftar pengguna, hak akses, serta daftar klien yang diijinkan melakukan koneksi ke beberapa \textit{resource server} yang nantinya dibangun.
+	
+	\item \textit{Container} ketiga berupa layanan dari \textit{resource server} yang nantinya digunakan untuk melakukan pengelolaan baik itu daftar pengguna atau daftar aplikasi klien yang diijinkan untuk terhubung. \textit{Resource server} ini akan berbagi bersama layanan basis data pada \textit{container} kedua dengan layanan \textit{OAuth Server} pada \textit{container} pertama.
+	
+	\item \textit{Container} keempat berupa layanan aplikasi klien yang berbentuk aplikasi \textit{web}. Aplikasi klien ini akan menggunakan layanan dari \textit{container} pertama, yaitu \textit{OAuth service} sebagai layanan yang akan melakukan otentikasi terhadap pengguna, kemudian atas dasar hak dan kewenangan pengguna yang dapat melakukan akses ke pengelolaan daftar nama pengguna dan daftar aplikasi klien, mampu untuk melakukan akses ke \textit{resource server}, apabila pengguna tidak memiliki hak dan kewenangan tersebut, maka layanan terhadap \textit{resource server} secara sistematis akan ditolak.
+	
+\end{enumerate}
+
+Kebutuhan perangkat keras peladen (\textit{server}) ini tidak perlu membeli karena nantinya akan menggunakan peladen (\textit{server}) yang sudah ada sebagai peladen (\textit{server}) aplikasi \textit{web} yang sudah beroperasi.
+
 	\item Kartu Jaringan
-	
-Kartu jaringan digunakan atau terpasang pada peladen agar peladen dapat terhubung dengan jaringan, baik jaringan LAN (\textit{Local Area Network}) maupun jaringan \textit{internet}. 
 
-Kartu jaringan ini tidak perlu membeli karena sudah terpasang lebih dari 1 (satu) pada tiap peladen yang dapat dikonfigurasi secara mandiri seluruhnya.
-	
-	\item Kabel \textit{Unshielded Twisted Pair} (UTP)
-	
-Kabel ini terdiri dari 4 (empat) pasang warna yang digunakan sebagai penghubung atau media komunikasi antar kartu jaringan yang terdapat pada tiap peladen agar aplikasi atau data pada peladen dapat diakses melalui jaringan.
+Kartu jaringan digunakan atau terpasang pada peladen (\textit{server}) agar peladen (\textit{server}) dapat terhubung dengan jaringan, baik jaringan LAN (\textit{Local Area Network}) maupun jaringan \textit{internet}. 
 
-Kabel ini juga tidak perlu membeli karena telah terpasang dan saling terhubung dari tiap peladen ke area jaringan.	
+Kartu jaringan ini tidak perlu membeli karena sudah terpasang lebih dari 1 (satu) pada tiap peladen (\textit{server}) yang dapat dikonfigurasi secara mandiri seluruhnya.
+
+\item Kabel \textit{Unshielded Twisted Pair} (UTP)
 	
+Kabel ini terdiri dari 4 (empat) pasang warna yang digunakan sebagai penghubung atau media komunikasi antar kartu jaringan yang terdapat pada tiap peladen (\textit{server}) agar aplikasi atau data pada peladen dapat diakses melalui jaringan.
+
+Kabel ini juga tidak perlu membeli karena telah terpasang dan saling terhubung dari tiap peladen (\textit{server}) ke area jaringan.	
+
 	\item Konektor RJ45
 	
-Konektor ini digunakan atau dipasangkan pada kabel UTP agar kabel UTP dapat dipasangkan pada kartu jaringan di tiap peladen dan tiap perangkat jaringan seperti \textit{switch}, \textit{router}, ataupun \textit{modem}. 
-
-Masing-masing helai kabel UTP akan terpasang pada tiap pin yang ada pada konektor RJ45, yang kemudian apabila konektor RJ45 dipasangkan pada kartu jaringan, atau slot RJ45 yang terdapat pada \textit{switch}, \textit{router} ataupun \textit{modem}, akan terhubung dengan pin pada RJ45 sehingga aliran data dapat disampaikan dari 1 (satu) peladen ke perangkat jaringan yang lain.	
+	Konektor ini digunakan atau dipasangkan pada kabel UTP agar kabel UTP dapat dipasangkan pada kartu jaringan di tiap peladen (\textit{server}) dan tiap perangkat jaringan seperti \textit{switch}, \textit{router}, ataupun \textit{modem}. 
+	
+	Masing-masing helai kabel UTP akan terpasang pada tiap pin yang ada pada konektor RJ45, yang kemudian apabila konektor RJ45 dipasangkan pada kartu jaringan, atau slot RJ45 yang terdapat pada \textit{switch}, \textit{router} ataupun \textit{modem}, maka akan terhubung dengan pin pada RJ45 sehingga aliran data dapat disampaikan dari 1 (satu) peladen (\textit{server}) ke perangkat jaringan yang lain.	
 	
 	\item \textit{Switch}
 	
-Masing-masing komponen yang terkoneksi / terhubung ke jaringan dapat diistilahkan sebagai \textit{host}, tentunya untuk membuat agar 1 (satu) \textit{host} terhubungan dengan 1 (satu) \textit{host} yang lain maka diperlukan sebuah kartu di masing-masing	\textit{host} dan sebuah kabel jaringan yang sudah terpasang konektor RJ45. Akan menjadi masalah apabila ada lebih dari 2 (dua) \textit{host} yang perlu terhubung. Rumusnya akan menjadi demikian :
+	Masing-masing komponen yang terkoneksi / terhubung ke jaringan dapat diistilahkan sebagai \textit{host}, tentunya untuk membuat agar 1 (satu) \textit{host} terhubungan dengan 1 (satu) \textit{host} yang lain maka diperlukan sebuah kartu di masing-masing \textit{host} dan sebuah kabel jaringan yang sudah terpasang konektor RJ45. Akan menjadi masalah apabila ada lebih dari 2 (dua) \textit{host} yang perlu terhubung.
+
+Rumusnya akan menjadi demikian :
 
 	\begin{enumerate}
+
 		\item Untuk mengetahui jumlah kebutuhan kartu jaringan yaitu menggunakan rumus :
 
 \[ JumlahKartuJaringan = n(n - 1) \]		
@@ -642,61 +686,69 @@ Masing-masing komponen yang terkoneksi / terhubung ke jaringan dapat diistilahka
 dimana \texttt{n} adalah jumlah \textit{host}
 
 		\item Sedangkan untuk mengetahui jumlah kabel jaringan yaitu menggunakan rumus :
-		
+
 \[ JumlahKabelJaringan = \frac{n(n-1)}{2} \]
 
 dimana \texttt{n} adalah jumlah \textit{host}
 		
 	\end{enumerate}
-	
-Ini akan lebih efektif dan efisien apabila digunakannya \textit{switch} sebagai penghubung atau pengatur lalu lintas data antar \textit{host}. Sebagai contoh bila ada 2 (dua) \textit{host} yang akan dihubungkan dengan jaringan menggunakan \textit{switch} ini, maka diperlukan 1 (satu) buah \textit{switch}, 2 (dua) buah kabel jaringan (UTP), dan 2 (dua) buah kartu jaringan.
+
+Ini akan lebih efektif dan efisien apabila menggunakan \textit{star schema} dengan \textit{switch} sebagai penghubung atau pengatur lalu lintas data antar \textit{host}. Sebagai contoh bila ada 2 (dua) \textit{host} yang akan dihubungkan dengan jaringan menggunakan \textit{switch} ini, maka diperlukan 1 (satu) buah \textit{switch}, 2 (dua) buah kabel jaringan (UTP), dan 2 (dua) buah kartu jaringan.
 
 Bagaimana bila ada 3 (tiga) atau lebih \textit{host} yang akan dihubungkan dalam sebuah jaringan yang sama, maka cukup menggunakan 1 (satu) buah \textit{switch}, \texttt{n} buah kabel jaringan (UTP) dan \texttt{n} buah kartu jaringan sebanyak jumlah \textit{host} yang akan dihubungkan. Tentunya model \textit{switch} perlu disesuaikan jumlah \textit{port} dengan jumlah \textit{host} yang akan dihubungkan.
 
 \textit{Switch} ini selain menjadikan jaringan komputer lebih efektif dan efisien, juga mengatur lalu lintas data secara lebih baik (dibandingkan \textit{hub}). Salah satu kelebihan yang dimiliki \textit{switch} dibanding \textit{hub} adalah data akan disampaikan tepat kepada alamat yang dituju, sehingga pertukaran data nyaris aman dalam jalur komunikasinya, sedangkan \textit{hub} lebih rentan karena setiap data yang data yang terkirim dan dilewatkan melalui \textit{hub}, maka alat ini akan menyebarkan berita ke setiap \textit{host} yang terhubung dengan \textit{hub} yang kemudian diserahkan kepada kartu jaringan apakah data yang diterima sesuai dengan alamat yang dimiliki atau tidak. Dalam kondisi ini, keamanan data akan terlalu berresiko saat terjadi komunikasi.
 
 \textit{Switch} ini pun tidak perlu membeli karena sudah terpasang pada sistem yang lama sebagai penghubung antar 1 (satu) \textit{host} dengan \textit{host} yang lain.
-	
+
 	\item \textit{Router}
-	
+
 Alat ini dalam istilah lain juga disebut sebagai gerbang (\textit{gateway}), yaitu sebuah jembatan yang menghubungkan 2 (dua) atau lebih jaringan yang berbeda alamat, cara kerja alat ini yaitu dengan memiliki peta \textit{routing} yang diprogram, peta inilah yang dibaca oleh \textit{router} kemana paket data yang diterima harus dikirimkan, apabila tujuan paket data hanya dikirimkan untuk \textit{host} yang berada di jaringan lokal, maka \textit{router} tidak akan mengirimkan paket datanya keluar, melainkan akan dikirim ke alamat yang berada di dalam jaringan LAN (\textit{Local Area Network}), tetapi bila tujuan paket data berada di luar jaringan, maka paket tersebut akan dikirimkan ke jaringan lain dalam lingkupnya, atau diteruskan ke \textit{router} lain yang menghubungkan jaringan di luar lingkupnya.
-
-Tentunya cara kerja tersebut di atas dengan konfigurasi peta jaringan yang sebelumnya sudah diatur dalam \textit{router}. Dan biasanya, pada setiap \textit{router} terdapat \textit{firewall} yang akan memberikan proteksi atau aturan-aturan komunikasi, dimana tidak semua data dapat diteruskan ke jaringan lain di luarnya, tetapi harus memenuhi persyaratan yang ditetapkan dalam tabel \textit{firewall}.
-
-Jaringan internal atau LAN pada bidang Pendataan dan Penetapan memiliki sebuah alamat jaringan lokal baik untuk jaringan nirkabel atau jaringan dengan kabel (UTP) di alamat 192.168.2.0/24, sedangkan untuk terhubung dengan internet digunakan sebuah \textit{router} yang akan menjembatani atau menjadi gerbang antara jaringan internet dengan jaringan pada LAN. \textit{Router} ini pula yang nantinya akan meneruskan data dan melakukan filter data baik yang masuk dari jaringan internet yang aksesnya atau \textit{request}-nya akan diteruskan ke peladen aplikasi \textit{web}.
+	
+	Tentunya cara kerja tersebut di atas dengan konfigurasi peta jaringan yang sebelumnya sudah diatur dalam \textit{router}. Dan biasanya, pada setiap \textit{router} terdapat \textit{firewall} yang akan memberikan proteksi atau aturan-aturan komunikasi, dimana tidak semua data dapat diteruskan ke jaringan lain di luarnya, tetapi harus memenuhi persyaratan yang ditetapkan dalam tabel \textit{firewall}.
+	
+	Jaringan internal atau LAN pada bidang Pendataan dan Penetapan memiliki sebuah alamat jaringan lokal baik untuk jaringan nirkabel atau jaringan dengan kabel (UTP) di alamat 192.168.2.0/24, sedangkan untuk terhubung dengan internet digunakan sebuah \textit{router} yang akan menjembatani atau menjadi gerbang antara jaringan internet dengan jaringan pada LAN. \textit{Router} ini pula yang nantinya akan meneruskan data dan melakukan filter data baik yang masuk dari jaringan internet yang aksesnya atau \textit{request}-nya akan diteruskan ke peladen aplikasi \textit{web}.
 
 Dengan kondisi demikian, maka biaya pengadaan untuk \textit{router} sendiri tidak diperlukan, karena sudah terpasang dan sudah digunakan untuk kegiatan komunikasi data pada jaringan yang sudah ada sebelumnya.
-	
+
 	\item \textit{Modem}
 	
 Fungsi dari \textit{modem} yaitu untuk menghubungkan 2 (dua) atau lebih media jaringan yang berbeda sehingga data dapat dikomunikasikan pada jaringan yang berbeda media tersebut. Sebagai contoh, karena bidang Pendataan dan Penetapan menggunakan akses serat-optik (\textit{fiber optik}) dari jaringan penyedia layanan internet, dan jaringan internal menggunakan kabel UTP, maka dibutuhkan \textit{modem} untuk menerjemahkan data yang melintas melalui 2 (dua) media jaringan tersebut.
 
-Karena \textit{modem} ini sudah digunakan pada sistem jaringan sebelumnya, maka tidak perlu dibeli.
+Karena \textit{modem} ini sudah digunakan pada sistem jaringan sebelumnya yang sudah digunakan secara baik, maka tidak perlu membelinya kembali.
 	
 \end{enumerate}
 
-Sehingga kebutuhan perangkat keras secara keseluruhan sebetulnya tidak perlu mengeluarkan biaya tambahan lain karena perangkat-perangkat tersebut sudah tersedia dan cukup untuk mengakomodir berjalannya sistem informasi yang nantinya akan dibangun.
+Melihat kondisi tersebut, kebutuhan perangkat keras secara keseluruhan sebetulnya tidak perlu mengeluarkan biaya tambahan lain karena perangkat-perangkat tersebut sudah tersedia dan cukup untuk mengakomodir berjalannya sistem informasi yang nantinya akan dibangun.
 
 Kemudian, untuk sarana dan prasarana jenis perangkat lunak yang dibutuhkan yaitu :
 
 \begin{enumerate}
 	\item Perangkat Lunak Sistem Operasi
-	
-Perangkat lunak sistem operasi digunakan sebagai dasar dari seluruh sistem yang akan berjalan diatasnya. Pemilihan sistem operasi ini pun harus dapat memenuhi kriteria stabil dalam melakukan tugasnya sebagai peladen untuk rentang waktu 24 jam selama 7 hari berturut-turut.
 
-Tentunya sistem operasi ini sudah terpasang baik pada peladen-peladen yang nantinya akan menjadi peladen sistem basis data dan peladen aplikasi \textit{web}. Pada peladen sistem basis data terpasang sistem operasi Windows Server 2008 R2 dengan lisensi legal yang sah tersedia karena hasil pengadaan di tahun sebelumnya. Sedangkan pada peladen aplikasi \textit{web} telah terpasang sistem operasi Ubuntu Server 14.04 yang tentu saja, untuk sistem operasi ini berlisensi gratis sehingga kebutuhan akan kedua peladen ini tidak perlu mengeluarkan biaya tambahan baik untuk lisensinya maupun pemasangannya.
-	
-	\item Perangkat Lunak Sistem Basis Data
-	
-Perangkat lunak basis data digunakan sebagai sistem yang nantinya akan mengatur dan menyimpan data-data hasil perekaman yang dilakukan oleh petugas pelayanan dan petugas entri data, yang kemudian hasil perekaman ini dapat diolah untuk menyajikan berbagai macam laporan yang nantinya diproduksi dan dibutuhkan oleh aplikasi \textit{web}, termasuk di antaranya adalah aplikasi yang akan dibangun ini.
+Perangkat lunak sistem operasi digunakan sebagai dasar dari seluruh sistem yang akan berjalan diatasnya. Pemilihan sistem operasi ini pun harus dapat memenuhi kriteria stabil dalam melakukan tugasnya sebagai peladen (\textit{server}) untuk rentang waktu 24 jam selama 7 hari berturut-turut.
 
-Pemilihan perangkat lunak basis data ini pun dikarenakan pada saat pengelolaan pajak bumi dan bangunan sektor perdesaan dan perkotaan di kelola oleh Pemerintah Pusat, aplikasi di bangun dan datanya di simpan dalam sistem basis data Oracle, sehingga pada saat persiapan pengalihan pajak bumi dan bangunan sektor perdesaan dan perkotaan menjadi pajak daerah, maka dibeli juga lisensi sistem basis data Oracle agar migrasi data ke Pemerintah Daerah Kabupaten Brebes berjalan dengan lebih mudah dan tanpa kendala. 
+Tentunya sistem operasi ini sudah terpasang baik pada peladen-peladen (\textit{servers}) yang nantinya akan menjadi peladen (\textit{server}) sistem basis data dan peladen (\textit{server}) aplikasi \textit{web}. Pada peladen (\textit{server}) aplikasi \textit{web} telah terpasang sistem operasi Ubuntu Server 14.04 yang tentu saja, untuk sistem operasi ini berlisensi gratis sehingga kebutuhan akan peladen (\textit{server}) ini tidak perlu mengeluarkan biaya tambahan baik untuk lisensinya maupun pemasangannya.
 
-Oleh sebab itu sistem basis data yang digunakan untuk membangun aplikasi sistem informasi pajak bumi dan bangunan sektor perdesaan dan perkotaan ini pun menggunakan sistem yang sama dan telah terpasang, sehingga tidak perlu mengeluarkan biaya kembali untuk pengadaan perangkat lunak basis data ini.
+\item Perangkat Lunak Sistem Basis Data
 	
+Perangkat lunak basis data digunakan sebagai sistem yang nantinya akan mengatur dan menyimpan data-data pengguna, data-data hak akses untuk tiap pengguna, serta daftar detail dari aplikasi klien yang diijinkan untuk melakukan akses terhadap \textit{resource server}. 
+
+Pemilihan perangkat lunak basis data ini didasarkan pada lisensinya yang tersedia gratis, namun tidak mengurangi performa dan kehandalannya sebagai tempat simpanan data, sehingga pilihan jatuh pada sistem basis data Postgresql.
+
+Sistem basis data ini sudah lebih dari 30 Tahun dikembangkan dengan lebih dari 400 kontributor, fiturnya pun tidak kalah dengan sistem basis data yang dikembangkan oleh industri-industri besar pada bidang sistem basis data.
+
+Nantinya sistem basis data ini akan berada dalam salah satu \textit{container} docker yang melakukan simpanan data untuk seluruh pengguna berikut hak aksesnya, basis data ini pun nantinya digunakan untuk menyimpan data atau informasi mengenai aplikasi klien yang mampu terhubung dan menggunakan sistem otentikasi yang akan dibangun.
+
+Karena gratis, maka untuk menggunakan sistem basis data Postgresql ini tidak perlu mengeluarkan biaya tambahan untuk pengadaannya.
+
 	\item Perangkat Lunak Peladen \textit{Web}
 	
-Perangkat lunak peladen \textit{web} digunakan untuk menjalankan atau penyediakan aplikasi \textit{web} yang telah dibangun yaitu sistem informasi PBB, perangkat lunak ini berbeda dengan peladen \textit{web} yang digunakan untuk aplikasi \textit{web} berbasis bahasa pemrograman PHP. Perangkat lunak peladen \textit{web} yang digunakan harus mendukung \textit{servlet} atau \textit{web container}.	
+Perangkat lunak peladen (\textit{server}) \textit{web} digunakan untuk menjalankan atau menyediakan aplikasi \textit{web} yang telah dibangun, yaitu sistem otentikasi di Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes.
+
+Peladen (\textit{server}) \textit{web} ini nantinya akan ada 2 (dua) macam, yaitu yang berbentuk \textit{web container} yang nantinya digunakan oleh \textit{OAuth Service} dan \textit{Resource Service}, dan yang lain adalah \textit{web server} seperti pada umumnya yang akan melayani aplikasi klien yang telah dibangun.
+
+Untuk peladen (\textit{server}) \textit{web} yang berbentuk \textit{web container} sebetulnya sudah ada dalam satu paket proyek yang dibangun menggunakan \textit{framework} Spring Boot, nantinya paket proyek ini akan dimasukkan dalam sebuah \textit{container} docker, sehingga proses \textit{deployment} akan lebih mudah dengan model \textit{Continuous Integration} dan \textit{Continuous Deployment}.
 
 Alasan kenapa dipilih peladen yang mendukung \textit{servlet} atau \textit{web container} karena memiliki beberapa kelebihan seperti berikut ini :
 
@@ -704,7 +756,7 @@ Alasan kenapa dipilih peladen yang mendukung \textit{servlet} atau \textit{web c
 		\item Efisien dan baik dalam \textit{performance}
 		
 \textit{Performance servlet} dapat dikatakan efisien dan baik karena tidak ada proses pembuatan berulang untuk tiap \textit{request} dari klien (\textit{client}). Setiap \textit{request} ditangani oleh proses \textit{servlet container}. \textit{Servlet} tidak dibuat dan dihancurkan secara berulang-ulang, melainkan tetap tersimpan pada memori untuk menangani \textit{request} yang datang selanjutnya.
-		
+
 		\item \textit{Powerful}
 
 \textit{Servlet} memiliki kemampuan yang lengkap antara lain mampu melakukan penanganan \textit{request}, \textit{session}, \textit{cookie}, akses ke basis data dengan \textit{Java Database Connection} (JDBC) dan \textit{caching}, serta pustaka yang lengkap untuk pembuatan aplikasi \textit{web}.
@@ -735,32 +787,48 @@ Dikatakan murah karena JDK Java dapat diunduh secara gratis, begitupun dengan \t
 		
 	\end{enumerate}
 	
-Pemilihan perangkat lunak peladen \textit{web} yang mendukung \textit{servlet} ini pun tidak perlu mengeluarkan biaya, cukup menggunakan Apache Tomcat yang memberikan lisensi gratis dalam penggunaannya, dengan konfigurasi yang tepat, maka peladen \textit{web} Apache Tomcat ini cukup untuk melayani permintaan aplikasi dari beberapa klien sekaligus. Sehingga untuk pengadaan perangkat lunak peladen \textit{web} ini pun tidak memerlukan tambahan biaya.	
-	
+Pemilihan perangkat lunak peladen (\textit{server}) \textit{web} yang mendukung \textit{servlet} ini pun tidak perlu mengeluarkan biaya, cukup menggunakan Apache Tomcat atau Jetty yang memberikan lisensi gratis dalam penggunaannya, dengan konfigurasi yang tepat, maka peladen (\textit{server}) \textit{web} Apache Tomcat ini cukup untuk melayani permintaan aplikasi dari beberapa klien sekaligus. Sehingga untuk pengadaan perangkat lunak peladen (\textit{server}) \textit{web} ini pun tidak memerlukan tambahan biaya, dan sudah ada dalam paket \textit{framework} Spring Boot untuk kemudahan \textit{debugging} dan \textit{deployment}.
+
+Perangkat lunak peladen (\textit{server}) yang digunakan untuk aplikasi klien nantinya akan menggunakan Nginx yang juga tersedia secara gratis dan sudah teruji kehandalannya karena beberapa perusahaan teknologi informasi besar pun menggunakan Nginx sebagai \textit{web server}-nya.
+
+Ketiga peladen (\textit{server}) ini akan ditempatkan pada masing-masing docker \textit{container} untuk memberikan layanan sesuai dengan tugas dan fungsinya.
+
 	\item Perangkat Lunak Desain Aplikasi
 	
 Perangkat lunak desain aplikasi digunakan untuk membuat desain pembangunan aplikasi, mulai dari desain struktur basis data, desain \textit{Unified Modeling Language} (UML) yang digunakan untuk membuat spesifikasi standar untuk mendokumentasikan, menspesifikan, dan membangun sistem perangkat lunak, desain UML sendiri dapat menggambarkan atau memodelkan diagram struktur aplikasi dan diagram sifat atau cara kerja aplikasi.
 
-Perangkat lunak atau desain aplikasi ini pun tidak perlu mengeluarkan biaya tambahan, ada perangkat lunak untuk desain aplikasi yang gratis dan disediakan oleh \textit{repository} Ubuntu yang bernama Dia.
+Perangkat lunak atau desain aplikasi ini pun tidak perlu mengeluarkan biaya tambahan, ada perangkat lunak untuk desain aplikasi yang gratis dan disediakan secara daring oleh \href{https://www.draw.io}{https://www.draw.io}. Aplikasi ini memiliki fasilitas yang cukup banyak dan bukan hanya untuk membuat desa UML saja, melainkan desain dari struktur basis data pun mampu dilakukan, kemudian desain jaringan komputer pun dapat dilakukan di aplikasi ini.
 
-Aplikasi Dia ini memiliki fasilitas bukan hanya untuk membuat desain UML atau struktur basis data, melainkan dapat pula untuk membuat desain jaringan komputer, desain rangkaian elektronik, dan beberapa desain lain sebagaimana terdapat pada halaman \textit{repository} Dia di alamat http://dia-installer.de/shapes/index.html.en.
-	
 	\item Perangkat Lunak \textit{Integrated Development Environment} (IDE)
 	
 Perangkat lunak IDE ini digunakan untuk membangun aplikasi \textit{web}, baik dari sisi tampilan tatapmuka pengguna (\textit{user interface}) maupun dari sisi kode. Pengujian \textit{unit testing} pun dapat dilakukan dengan menggunakan perangkat lunak ini.
 
-Beberapa pilihan untuk perangkat lunak IDE ini pun beragam dan banyak yang menyediakan secara gratis. Sebagai contoh adalah Netbeans dan Eclipse. Untuk pengembangan aplikasi ini dipilih Intellij IDEA karena tersedianya beragam \textit{plugins} sebagai pendukung dalam membangun sebuah aplikasi. 
+Beberapa pilihan untuk perangkat lunak IDE ini pun beragam dan banyak yang menyediakan secara gratis. Sebagai contoh adalah Netbeans dan Eclipse. Untuk pengembangan aplikasi ini dipilih Intellij IDEA sebagai perangkat dalam membangun layanan \textit{OAuth Service} dan \textit{Resource Service} karena tersedianya beragam \textit{plugins} sebagai pendukung dalam membangun sebuah aplikasi, sedangkan untuk membangun aplikasi klien yang digunakan untuk melakukan pengelolaan atau manajemen pengguna dan aplikasi klien lain, akan menggunakan Visual Studio Code, karena pada Visual Studio Code ini pun terdapat beragam \textit{plugins} yang mampu mendukung dan mempermudah pengerjaan aplikasi klien nantinya.
 
-Dengan kata lain, untuk pengadaan perangkat lunak IDE ini pun tidak perlu mengeluarkan biaya tambahan.
-	
-	\item Perangkat Lunak Manajemen Basis Data
-	
-Perangkat lunak manajemen basis data digunakan untuk membangun struktur basis data dengan lebih mudah, biasanya disertai dengan cekatan (\textit{wizard}) yang memandu pengguna untuk membentuk sebuah sistem basis data. Perangkat lunak ini pun dapat digunakan untuk menguji kebenaran kode \textit{Structured Query Language} (SQL) yaitu kode yang digunakan untuk mengolah data yang berada pada sistem basis data.
+Kedua aplikasi itu, baik Intellij IDEA dalam hal ini, yang digunakan adalah versi komunitas (\textit{community edition}) dan Visual Studio Code tersedia secara gratis dan bebas diunduh dari masing-masing laman penyedianya, sehingga untuk pengadaan perangkat lunak IDE ini tidak perlu mengeluarkan biaya tambahan.
 
-Karena basis data yang digunakan adalah Oracle, maka perangkat lunak untuk manajemen basis data yang digunakan adalah SQL Developer yang merupakan aplikasi yang dapat di unduh secara gratis, sehingga tidak perlu lagi mengeluarkan biaya tambahan untuk pengadaannya.
-	
+		\item Perangkat Lunak Docker
+		
+		Perangkat lunak docker ini digunakan untuk membangun \textit{container-container} kecil yang nantinya berjalan secara independen yang tiap \textit{container}-nya akan menjalankan sebuah layanan (\textit{service}) tertentu yang spesifik, contohnya, sebuah \textit{container} hanya akan menjalankan layanan (\textit{service}) basis data saja, sedangkan \textit{container} yang lain hanya akan menjalankan layanan (\textit{service}) \textit({OAuth Service}), keduanya akan berjalan secara independen dan paralel yang apabila ingin kedua layanan atau \textit{container} ini saling terhubung, akan melalui sebuah sambungan yang didefinisikan secara khusus.
+		
+		Bisa diistilahkan bahwa docker ini adalah bentuk virtualisasi yang lebih ringan, karena sebetulnya, didalam sebuah \textit{container} akan terdapat sebuah sistem operasi yang berjalan, serta beberapa aplikasi pendukung yang tujuannya spesifik untuk menjalankan layanan (\textit{service}) utamanya. Contohnya, saat ada \textit{container} yang memiliki layanan (\textit{service}) basis data Postgresql, maka disana akan terdapat sebuah sistem operasi, basis data Postgresql, dan beberapa pustaka pendukung agar basis data Postgresql dapat berjalan.
+		
+		Untuk penggunaan docker ini kita pun dapat memilih menggunakan versi \textit{Enterprise} atau \textit{community edition}, untuk membangun aplikasi ini, sebetulnya kebutuhan untuk menggunakan versi \textit{community edition} sudah cukup, sehingga kita tidak memerlukan biaya tambahan lain untuk mendapatkannya.
+		
+		\item Perangkat Lunak Git
+		
+		Perangkat lunak Git digunakan untuk melakukan \textit{Continuous Integration} dengan lebih sempurna. Fungsi dari perangkat lunak Git ini sebetulnya tergolong dalam aplikasi \textit{Versioning Control} yang melakukan pencatatan atau \textit{log} dari kondisi perubahan berkas atau kandar, sehingga saat melakukan perubahan-perubahan yang terjadi pada fitur aplikasi yang dibangun dapat dilihat historis perubahannya, dan apabila ada kesalahan implementasi fitur dan perlu untuk dikembalikan kondisi ke beberapa keadaan diwaktu sebelumnya, mampu dilakukan dengan mudah tanpa harus mengubah kondisi berkas saat ini.
+		
+		Fungsi lain dari perangkat lunak Git ini sebetulnya adalah untuk kebutuhan kolaborasi, dimana 1 (satu) atau lebih pengkode (\textit{coder}) dapat mengerjakan pekerjaan koding (\textit{coding}) secara bersama-sama dan paralel, setelah perkerjaan satu sub-modul atau sebuah fitur selesai, hasil kodenya dapat digabung sehingga menjadi satu fitur yang lengkap dan dapat digunakan.
+		
+		Penggunaan Git ini tidak terlepas dari sebuah peladen (\textit{server}) Git yang digunakan untuk mengumpulkan seluruh hasil penetapan (\textit{commit}) kode dari masing-masing pengkode (\textit{coder}), yang digunakan nantinya sebagai peladen (\textit{server}) Git adalah Gitlab, karena disana sudah terdapat fitur \textit{Continuous Deployment} (CD) yang berfungsi untuk melakukan instalasi atau pemasangan secara otomatis pada peladen (\textit{server}) VPS milik unit kerja Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah.
+		
+		Pada proses \textit{Continuous Integration} dan \textit{Continuous Deployment} (CI/CD) nantinya, dapat dilakukan konfigurasi fase penyelarasan kode yang dapat diatur sesuai kebutuhan, contohnya, pada saat kode dari tiap pengkode (\textit{coder}) akan digabung, maka otomatis akan melakukan \textit{unit test} untuk memastikan bahwa tidak ada kesalahan logika program per sub-unit kode terkecil sekaligus melakukan \textit{integration test} untuk memastikan bahwa fitur baru atau pembersihan \textit{bugs} yang dilakukan tidak bermasalah apabila sistem berada pada lingkungan yang mengharuskannya terhubung ke beberapa sumber daya (\textit{resource}) seperti sistem basis data, jaringan, atau hal lain yang dibutuhkan sistem untuk melakukan kegiatan operasionalnya.
+		
+		Penggunaan Git dapat diperoleh dan diunduh dengan gratis dari \href{https://git-scm.com/}{https://git-scm.com/}, sedangkan Gitlab sendiri menyediakan layanannya dalam beberapa versi sesuai kebutuhan, dan fitur CI/CD yang kita butuhkan sudah ada pada versi gratis yang ditawarkan oleh layanan ini, sehingga tidak perlu mengluarkan biaya untuk menggunakan layanan dari GItlab ini.
+
 	\item \textit{Framework} Spring
-	
+
 \textit{Framework} Spring adalah perangkat yang dapat membantu untuk membangun aplikasi Java berskala besar dengan mudah. \textit{Framework} Spring sendiri sebetulnya terbagi menjadi beberapa modul. Aplikasi yang akan dibangun dapat memilih modul mana saja yang akan digunakan. Modul inti dari \textit{Framework} Spring ini adalah modul \textit{core container}, yang termasuk di dalamnya adalah model untuk konfigurasi dan mekanisme \textit{dependency injection}.
 
 \textit{Dependency Injection} adalah salah satu fasilitas yang memudahkan kita untuk tidak perlu membentuk tiap objek baru secara manual, melainkan cukup dideklarasikan \textit{bean}, kemudian \textit{framework} Spring yang akan melakukan pembentukan objeknya secara otomatis.
@@ -779,9 +847,11 @@ Beberapa spesifikasi yang didukung oleh \textit{Framework} Spring ini adalah sep
 		\item JMS (JSR 914)
 		\item Common Annotations (JSR 250)
 	\end{itemize}	
-	
+
 Beberapa waktu tata aturan pada pengembangan aplikasi Java EE telah mengalami perubahan. Pada awal hadirnya Java EE dan Spring, aplikasi \textit{web} yang telah dibangun akan di \textit{deploy} ke peladen aplikasi. Namun sekarang dengan hadirnya Spring Boot, aplikasi dibangun dalam lingkungan \textit{devops} dan lebih ramah dengan teknologi \textit{cloud} dengan adanya \textit{servlet container} yang dipendam dalam paket \textit{framework}. Bahkan pada \textit{Framework} Spring 5, aplikasi WebFlux tidak perlu menggunakan API \textit{servlet} secara langsung dan dapat menggunakan peladen \textit{web} seperti Netty yang tidak memiliki \textit{servlet containers}.
-	
+
+\textit{Framework} Spring ini pun tersedia secara gratis dan dapat digunakan tanpa perlu mengeluarkan biaya tambahan lagi.
+
 	\item Spring Data JPA
 	
 Spring Data JPA sebetulnya adalah bagian dari \textit{framework} Spring yang tujuan dibentuknya adalah untuk mengurangi jumlah kode \textit{boilerplate} yang dibutuhkan untuk mengimplementasikan lapisan akses data ke berbagai sistem basis data.
@@ -789,71 +859,128 @@ Spring Data JPA sebetulnya adalah bagian dari \textit{framework} Spring yang tuj
 Kelebihan dari penyederhanaan ini adalah mengurangi jumlah \textit{artifact} yang harus dideklarasikan dan di \textit{maintained}, konsistensi pada pola data akses, dan konsistensi pada konfigurasi. Satu-satunya yang perlu dideklarasikan pada Spring Data JPA adalah \textit{interface} DAO.
 
 Untuk dapat mengimplementasikan Spring Data JPA, \textit{interface} DAO terlebih dahulu harus melakukan \textit{extends} terhadap salah satu antar-muka \textit{repository} yang disediakan oleh Spring Data JPA, nantinya Spring Data akan mencari antar-muka ini dalam pustakanya, kemudian membuatkan implementasinya secara otomatis.
-	
+
+Pustaka atau \textit{framework} Data JPA ini pun disediakan gratis tanpa perlu mengeluarkan tambahan biaya untuk pengadaannya.
+
 	\item Pustaka \textit{Java Database Connection} (JDBC)
 	
-Pustaka \textit{driver} JDBC diperlukan sebagai jembatan antara kode aplikasi yang dibangun dengan data yang berada dalam sistem basis data. \textit{Driver} JDBC ini spesifik dan berbeda untuk tiap sistem basis data, karena sistem basis data yang digunakan adalah Oracle, maka \textit{driver} yang diperlukan adalah \textit{driver} untuk basis data Oracle yang dapat diunduh di laman http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html, karena kita menggunakan \textit{Maven} sebagai \textit{build-tools}, sehingga kita cukup mendeklarasikan skrip XML seperti berikut di berkas konfigurasi untuk Maven :
+Pustaka \textit{driver} JDBC diperlukan sebagai jembatan antara kode aplikasi yang dibangun dengan data yang berada dalam sistem basis data. \textit{Driver} JDBC ini spesifik dan berbeda untuk tiap sistem basis data, karena sistem basis data yang digunakan adalah Postgresql, maka \textit{driver} yang diperlukan adalah \textit{driver} untuk basis data Postgresql yang dapat diunduh di laman \href{https://jdbc.postgresql.org/download.html}{https://jdbc.postgresql.org/download.html}, karena kita menggunakan \textit{Maven} sebagai \textit{build-tools}, sehingga kita cukup mendeklarasikan skrip XML seperti berikut di berkas konfigurasi untuk Maven :
 
 \begin{lstlisting}[language=XML]
 <dependency>
-    <groupId>ojdbc</groupId>
-    <artifactId>ojdbc</artifactId>
-    <version>14</version>
-</dependency>
-\end{lstlisting}	
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+</dependency>\end{lstlisting}	
 
-Biasanya tiap-tiap sistem basis data akan menyediakan \textit{driver} JDBC masing-masing sebagai salah satu bentuk dukungan bahwa sistem basis data tersebut mampu ikut terintegrasi bersama aplikasi yang dibangun dengan bahasa pemrograman Java.
+Biasanya tiap-tiap sistem basis data akan menyediakan \textit{driver} JDBC masing-masing sebagai salah satu bentuk dukungan bahwa sistem basis data tersebut mampu ikut terintegrasi bersama aplikasi yang dibangun dengan bahasa pemrograman Kotlin.
 
 Lisensi untuk pustaka \textit{driver} JDBC ini pun gratis sehingga tidak perlu mengeluarkan biaya untuk pengadaannya.
+
+	\item Pustaka Spring Security
 	
-	\item Pustaka Lombok
+	Pustaka ini digunakan untuk melakukan pembatasan akses terhadap beberapa sumber daya (\textit{resource}) yang disediakan oleh \textit{framework} Spring untuk pengguna yang telah terdaftar dan memiliki kewenangan.
 	
-Pustaka ini digunakan untuk mengurangi \textit{boilerplate} saat kita membuat sebuah kelas entitas atau saat kita ingin membuat beberapa fungsi generik seperti \textit{get} dan \textit{set}. Pustaka ini pun menyediakan beberapa fungsi atau \textit{method} dan konstruktor yang umum biasa dibentuk dan digantikan hanya dengan sebuah anotasi.	Kondisi ini akan sangat meringkas jumlah kode yang harus di ketikkan.
+	Spring Security sebetulnya juga adalah sebuah \textit{framework} yang memberikan fitur otentikasi dan otorisasi pada aplikasi Java, dan seperti seluruh \textit{project} yang dibangun oleh \textit{Spring}, bahwa \textit{framework} Spring Security ini dapat secara mudah dikembangkan sesuai dengan kebutuhan aplikasi yang akan dibangun.
 	
+	Penggunaan pustaka Spring Security ini pun gratis sehingga tidak perlu mengeluarkan biaya tambahan untuk pengadaannya.
+	
+	\item Pustaka Spring Security OAuth
+	
+	Pustaka ini sebetulnya adalah hasil perluasan atau pustaka pendukung untuk Spring Security, sehingga mampu melayani menggunakan protokol OAuth dan OAuth 2, dan yang akan diimplementasikan pada aplikasi yang dibangun nantinya menggunakan protokol OAuth 2 sehingga penggunaan pustaka Spring Security OAuth ini sudah dapat mencukupi kebutuhan pengembangan.
+	
+	Pustaka Spring Security OAuth ini pun gratis, sehingga tidak perlu mengeluarkan biaya tambahan untuk pengadaannya.
+	
+	\item Pustaka Spring Security JWT
+	
+	Pustaka ini digunakan untuk mengimplementasikan konsep \textit{Authorization Grant Type} dengan mode implisit (\textit{implicit}), dimana nantinya token yang dihasilkan oleh layanan (\textit{services}) \textit{OAuth Service}) akan berbentuk JWT (JSON Web Token), dimana token ini adalah hasil enkripsi dari sebuah objek JavaScript yang memuat informasi-informasi seperti nama pengguna, hak akses, informasi aplikasi klien, dan beberapa detail lainnya. 
+	
+	Token ini juga yang nantinya digunakan oleh aplikasi klien untuk melakukan permintaan data (\textit{request}) ke \textit{resource server} beserta detail data yang akan diminta.
+	
+	Pustaka Spring Security JWT ini pun tersedia secara gratis sehingga tidak perlu mengeluarkan biaya tambahan untuk pengadaannya.
+	
+	\item Pustaka Spring Web
+	
+	Pustaka ini digunakan pada saat membangun layanan (\textit{service}) \textit{OAuth Service}, dimana nantinya pengembangan layanan akan menggunakan konsep MVC (Model-View-Controller), karena konsep ini selain mempermudah proses pengembangan di awal, juga akan mempermudah dalam pemeliharaan kode yang telah dibangun.
+	
+	Pustaka ini akan digunakan bersama dengan pustaka \textit{templating engine} Thymeleaf di layanan (\textit{service}) \textit{OAuth Service}, fungsi dari Thymeleaf sendiri nantinya akan membentuk tampilan (\textit{user interface}) dari halaman \textit{login} untuk proses otentikasi pengguna.
+	
+	Pustaka Spring Web ini pun tersedia dan dapat digunakan secara gratis sehingga tidak perlu mengeluarkan biaya tambahan untuk pengadaannya.
+	
+	\item Pustaka Flyway
+	
+	Pustaka Flyway ini digunakan mirip seperti fungsi Git dalam hal \textit{versioning}-nya saja, namun penggunaannya spesifik pada pembentukan struktur data pada basis data.
+	
+	Pemanfaat khususnya yang dibutuhkan oleh pustaka ini yaitu untuk membentuk struktur data untuk daftar pengguna, hak akses, dan daftar aplikasi klien, dimana nantinya pustaka ini akan secara otomatis membentuk struktur tabelnya pada sistem basis data, dan mengisikan datanya jika diperlukan, yang perlu dilakukan seorang pemrogram (\textit{coder}) hanya cukup mendeklarasikan struktur tabel dan isian data pada berkas dengan penamaan yang telah ditentukan oleh pustaka ini.
+	
+	Pustaka Flyway ini pun tersedia secara gratis sehingga tidak memerlukan tambahan biaya. Untuk menggunakannya, kita cukup mendeklarasikannya pada berkas konfigurasi yang digunakan oleh Maven.
+
 	\item Pustaka Jackson
-	
+
 Pustaka ini sangat terkenal dan efisien untuk mengubah objek Java ke dalam format JSON atau sebaliknya.	Pustaka ini akan digunakan untuk layanan REST nantinya, ketika API akan mengambalikan data sebuah objek Java, maka Jackson akan mengubah secara otomatis objek tersebut menjadi JSON, begitu pula saat menerima data dari aplikasi klien yang berbentuk JSON, akan mengubahnya secara otomatis menjadi bentuk objek Java.
+
+	\item Kotlin \textit{Compiler}
+
+\textit{Compiler} ini digunakan untuk melakukan kompilasi kode yang ditulis dengan bahasa pemrograman Kotlin. Pemilihan bahasa pemrograman Kotlin ini sebagai dasar pembangunan aplikasi atau sistem Otentikasi karena mampu bersinergi dengan sistem yang dibangun menggunakan bahasa Java, dengan kata lain, karena \textit{framework} yang digunakan adalah Spring Boot yang dibangun menggunakan bahasa pemrograman Java, penggunaan bahasa pemrograman Kotlin dengan menggunakan \textit{framework} Spring sangat memungkinkan dengan ditambah kehandalan dari bahasa pemrograman Kotlin yang mampu mendeteksi atau mengurangi timbulnya \textit{Null Exception} pada aplikasi.
+
+Kotlin \textit{Compiler} sendiri tersedia secara gratis dan dapat diunduh dari lamah \href{https://kotlinlang.org/}{https://kotlinlang.org/}, sehingga penggunaannya tidak memerlukan biaya tambahan.
+
+	\item Maven
+
+Maven digunakan sebagai \textit{build-tools} untuk mempermudah pengelolaan proyek yang akan dibangun, untuk menggunakan berbagai macam pustaka seperti diatas, cukup dideklarasikan pada sebuah berkas konfigurasi Maven dengan nama \texttt{pom.xml}, untuk melakukan pemaketan (\textit{packaging}) pun sangat mudah, nantinya dengan Maven, sebelum sebuah proyek didistribusikan atau di \textit{deploy} ke peladen (\textit{server}), akan dilakukan serangkaian tes (\textit{unit test} dan \textit{integration test}) untuk memastikan bahwa kode yang dibangun telah memenuhi kelayakan untuk digunakan.
+
+	\item \textit{Framework} Angular
 	
+	Angular digunakan untuk membangun tampilan tatap muka (\textit{user interface}) dari aplikasi yang dibangun. Nantinya, tiap tampilan tatap muka (\textit{user interface}) akan terhubung ke satu atau lebih \textit{resource server} yang menyediakan layanan datanya.
+	
+	Penggunaan \textit{Framework} Angular ini dipilih karena sudah memiliki fitur PWA (\textit{Progressing Web Application}) dimana tampilan akan menyesuaikan diri saat diakses dari beberapa perangkat dengan resolusi yang berbeda-beda, contohnya yaitu, aplikasi akan memiliki perbedaan tampilan saat diakses menggunakan \textit{browser} di komputer atau laptop, dan tampilan saat diakses menggunakan aplikasi \textit{mobile} di \textit{smartphone}.
+	
+	Keunggulan lain yang diperoleh dari \textit{Framework} Angular adalah karena hasilnya berupa aplikasi dengan konsep SPA (\textit{Single Page Application}), semua isi tampilan akan dikirimkan secara keseluruhan ke \textit{browser} di komputer klien atau \textit{smartphone}, untuk menampilkan atau melakukan operasi data, aplikasi cukup berkomunikasi dengan bagian \textit{back-end}, dalam hal ini \textit{resource server} dengan menggunakan arsitektur REST dengan format pengiriman datanya berbentuk JSON (\textit{JavaScript Object Notation}), tentu saja berbeda dengan teknologi aplikasi web yang setiap melakukan \textit{request} atau permintaan data ke peladen (\textit{server}), peladen (\textit{server} akan mengembalikannya dalam bentuk satu halaman penuh beserta datanya, namun dengan menggunakan arsitektur REST dengan implementasi konsep SPA (\textit{Single Page Application}) , penghematan \textit{bandwidth} dapat ditekan dan aplikasi dapat berjalan dalam kondisi dimana lalu lintas data terbatas.
+	
+	\textit{Framework} Angular ini pun tersedia secara gratis dan bisa diunduh dengan cara yang telah disediakan pada laman \href{https://angular.io/}{https://angular.io/}, sehingga tidak memerlukan biaya tambahan untuk pengadaannya.
+
 \end{enumerate}
 
 \section{SUMBER DAYA MANUSIA YANG TERLIBAT DALAM SISTEM APLIKASI}
 
-Karena sistem aplikasi ini hanya melakukan akses informasi terhadap pencatatan pembayaran pajak bumi dan bangunan untuk sektor perdesaan dan perkotaan, maka sumber daya manusia yang terlibat dalam sistem aplikasi ini nantinya adalah masyarakat umum wajib pajak yang dapat mengoperasikan atau menggunakan \textit{browser} untuk melakukan akses aplikasi.
+Karena sistem otentikasi ini melakukan tugasnya sebagai pengaman atau pelindung terhadap akses data yang ditujukan ke \textit{resource service}, maka sumber daya manusia yang terlibat pada penggunaan sistem ini nantinya adalah seluruh personil yang akan melakukan akses terhadap data yang berada di Bidang Pendataan dan Penetapan Badan Pengelolaan Pendapatan, Keuangan dan Aset Daerah Kabupaten Brebes.
 
-Adapun untuk mendukung penyampaian data yang valid, maka dibutuhkan sumber daya manusia pada sisi internal untuk memastikan bahwa data yang telah tercatat pembayarannya pada BPD Jawa Tengah, dapat tercatat pula secara periodik pada SISMIOP, kondisi ini diperlukan karena mengingat bahwa untuk pengelolaan atau manajemen data ketetapan pajak bumi dan bangunan sektor perdesaan dan perkotaan berada pada peladen di BPPKAD Kabupaten Brebes, sedangkan basis data tempat melakukan pencatatan pembayaran berada di peladen BPD Jawa Tengah, data yang tercatat pembayarannya di hari ini, perlu dicatatkan dan diverifikasi pencatatannya pada peladen di BPPKAD Kabupaten Brebes pada H+1.
+Nantinya setiap personil yang terlibat atau menggunakan aplikasi klien akan memiliki nama pengguna dan kata kunci masing-masing yang tersimpan dalam sistem basis data. Termasuk nantinya saat ada aplikasi klien yang dapat digunakan oleh pihak eksternal organisasi atau unit kerja, maka perlu didaftarkan terlebih dahulu dalam sistem ini. 
 
-Dengan demikian sistem informasi pembayaran pajak bumi dan bangunan sektor perdesaan dan perkotaan akan menampilkan informasi yang valid kepada masyarakat wajib pajak. 
+Personil yang memiliki kemampuan untuk melakukan akses dan melakukan perubahan data terhadap data pengguna dan aplikasi klien adalah seorang administrator, seorang administrator nantinya akan diberikan kewenangan dan diserahi tanggung jawab sebagai pengelola sistem otentikasi ini.
 
 \section{ORGANISASI SISTEM APLIKASI}
 
-Organisasi sistem informasi pencatatan pembayaran sebetulnya cukup sederhana, karena hanya menampilkan informasi pencatatan pembayaran, namun untuk menghasilkan informasi pencatatan pembayaran yang valid, perlu di dukung dengan data yang akurat, yang perlu ditingkatkan adalah menjaga tingkat akurat pencatatan pembayaran pada SISMIOP yang telah dihasilkan oleh peladen BPD Jawa Tengah.
+Organisasi dari sistem otentikasi ini seperti terlihat pada gambar \ref{fig:001-arsitektur-sistem} dimana secara internal, akan terdiri dari 4 (empat) bagian, yaitu :
 
-Alur yang didapat dari awalnya adalah pada saat proses penetapan untuk pertama kali di tahun pajak berjalan, proses penetapan ini akan menghasilkan nilai awal ketetapan dari tiap objek pajak yang memenuhi kriteria, nilai hasil ketetapan ini akan diduplikasikan ke peladen BPD Jawa Tengah agar pihak BPD Jawa Tengah dapat melakukan verifikasi data apabila ada penyetoran pajak bumi dan bangunan perdesaan dan perkotaan yang akan masuk. Data awal ini akan dipastikan sama antara kondisi di peladen BPPKAD Kabupaten Brebes, dengan peladen milik BPD Jawa Tengah.
-
-Seiring berjalannya waktu, kondisi pencatatan pembayaran pada peladen BPD Jawa Tengah akan berjalan, bahkan pada kondisi dimana hari sedang libur atau jam kantor kas masih dalam kondisi tutup, karena transaksi yang dilakukan dapat melalui mesin ATM. Kondisi untuk objek-objek yang telah tercatat terbayar tidak dapat lagi diubah pada peladen BPD Jawa Tengah, dan pada H+1 data dapat diunduh untuk kepentingan pencatatan pembayaran pada peladen di BPPKAD Kabupaten Brebes.
-
-Pada kondisi yang bersamaan (di hari yang sama) dapat pula terjadi perubahan data pada peladen di BPPKAD Kabupaten Brebes akibat mutasi, penggabungan, pengurangan, perubahan data objek mengenai luasan, zona, atau hal yang lain. Idealnya, kondisi perubahan yang terjadi akibat pengajuan perubahan data pada BPPKAD Kabupaten Brebes, tidak diperbolehkan melakukan pembayaran pajak bumi dan bangunan perdesaan dan perkotaan di BPD Jawa Tengah, karena akan mengakibatkan ketidak-sesuaian data antara BPD Jawa Tengah dan peladen BPPKAD Kabupaten Brebes. Hal inilah yang sering terjadi dan perlu petugas khusus untuk melakukan penyesuaian data yang terjadi akibat perubahan-perubahan data tersebut.
-
-Kegiatan inilah yang harus dilakukan setiap saat agar hasil atau informasi yang disampaikan kepada masyarakat wajib pajak pada sistem informasi ini menjadi lebih valid, akurat dan dapat dipertanggungjawabkan.
-
-Solusi lain adalah dengan melakukan penghentian penetapan ulang atas perubahan objek pajak, sehingga apabila ada pengajuan perubahan data pada tahun berjalan, data akan langsung diubah, namun tidak ditetapkan, sehingga tidak menimbulkan tagihan baru pada peladen BPPKAD Kabupaten Brebes yang mungkin akan tidak bersesuaian dengan data yang ada pada peladen pada BPD Jawa Tengah yang telah tercatat terbayar.
+\begin{enumerate}
+	\item \textit{Container} docker yang berisi layanan \textit{OAuth Service}, dimana layanan ini akan berisi halaman otentikasi tempat pengguna melakukan otentikasi ketika akan mengakses dengan aplikasi klien (\textit{user agent}). Layanan (\textit{service}) ini pun akan terhubung dengan sistem basis data tempat daftar pengguna dan daftar aplikasi klien (\textit{user agent}) disimpan. Sistem basis data akan berada pada \textit{container} docker yang berbeda dan berjalan secara independen.
+	
+	\item \textit{Container} docker yang berisi layanan sistem basis data Postgresql yang digunakan untuk menyimpan data mengenai daftar pengguna dan daftar aplikasi klien (\textit{user agent}). \textit{Container} ini akan terhubung ke layanan \textit{OAuth service} dan \textit{Resource service}.
+	
+	\item \textit{Container} docker yang berisi layanan (\textit{service}) dari \textit{Resource Server} ini digunakan untuk melakukan pengelolaan daftar pengguna (\textit{resource owner}) dan daftar aplikasi klien (\textit{user agent}). \textit{Container} ini akan terhubung dengan layanan sistem basis data dan aplikasi klien (\textit{user agent}) yang menjadi tampilan tatap muka (\textit{user interface}) untuk pengelolaan pengguna (\textit{resource owner}) dan aplikasi klien (\textit{user agent}).
+	
+	\item \textit{Container} docker yang berisi layanan aplikasi klien (\textit{user agent}) aplikasi \textit{web} yang berbentuk \textit{Single-Page Apps}, fungsinya adalah sebagai tampilan tatap muka (\textit{user interface}) dari manajemen daftar pengguna (\textit{resource owner}) dan daftar apilkasi klien (\textit{user agent}). Kedepannya, aplikasi klien (\textit{user agent}) ini tidak hanya menyediakan tampilan tatap muka (\textit{user interface}) untuk pengelolaan daftar pengguna dan aplikasi klien (\textit{user agent}) saja, melainkan dapat dikembangkan menjadi aplikasi apapun untuk kebutuhan tampilan tatap muka dari aplikasi-aplikasi yang dibangun di organisasi.
+	
+\end{enumerate}
 
 \section{WAKTU DAN BIAYA YANG DIBUTUHKAN DALAM PEMBUATAN / PENGEMBANGAN SISTEM APLIKASI SECARA MENYELURUH}
 
 Dari sisi biaya, maka tidak diperlukan pengeluaran biaya untuk pembuatan / pengembangan ini, karena sebetulnya seluruh perangkat keras sudah terpasang dan berjalan normal, dan dari pengadaan perangkat lunaknya pun semuanya menggunakan versi gratis.
 
-Sedangkan dari waktu yang dibutuhkan, akan menghabiskan waktu sekitar 9 minggu yang tentu saja ini waktu yang tidak terlalu lama untuk membangun sebuah aplikasi.
+Sedangkan dari waktu yang dibutuhkan, akan menghabiskan waktu sekitar 11 (sebelas) minggu yang tentu saja ini waktu yang tidak terlalu lama untuk membangun sebuah aplikasi.
 
 \section{MANFAAT DAN DAMPAK DARI PENGEMBANGAN SISTEM APLIKASI}
 
 Beberapa manfaat dan dampak yang didapat dari pengolahan data nantinya adalah sebagai berikut :
 
 \begin{enumerate}
-	\item Masyarakat wajib pajak dapat dengan mudah mengakses data objek-pajaknya, berapa besaran yang harus dibayarkan, dan bagaimana status pembayarannya, apakah sudah lunas atau belum, tanpa harus datang ke BPPKAD Kabupaten Brebes.
+
+	\item Pengguna cukup mengingat 1 (satu) bagian informasi saja berupa nama pengguna dan kata kuncinya untuk melakukan akses terhadap seluruh aplikasi yang tersedia, karena otentikasi akan terjadi pada satu tempat saja, yaitu di \textit{OAuth Server}, yang kemudian hak aksesnya akan didelegasikan ke aplikasi klien (\textit{user agent}) untuk kemudian digunakan sebagai pendukung permintaan (\textit{request}) data ke \textit{resource server}.
 	
-	\item Masyarakat wajib pajak dapat melakukan kontrol terhadap petugas pemungut tingkat Desa/Kelurahan dalam melaksanakan kewajibannya meneruskan uang setoran pajak bumi dan bangunan perdesaan dan perkotaan ke BPD Jawa Tengah.
+	\item Waktu pengembangan aplikasi selanjutnya lebih singkat karena fase atau bagian waktu yang digunakan untuk membangun halaman otentikasi sudah dapat ditangani oleh \textit{OAuth Server}.
 	
-	\item Bagi petugas pemungut tingkat Desa/Kelurahan pun dapat melakukan pemeriksaan ulang, objek-objek mana saja yang telah terbayarkan dan mana yang belum.
+	\item Administrator sistem atau aplikasi lebih mudah untuk mendaftarkan atau mengelola pengguna berikut hak aksesnya karena hanya dilakukan dari 1 (satu) tempat saja.
+	
 \end{enumerate}
 
 \end{document}
