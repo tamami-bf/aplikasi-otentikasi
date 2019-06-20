@@ -1,0 +1,2103 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.19)  20 JUN 2019 04:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**00.book.tex
+(./00.book.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks16
+\footnotemargin=\dimen113
+\c@pp@next@reset=\count91
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel-indonesian/bahasa.ldf
+Language: bahasa 2017/02/15 v1.0m Bahasa Indonesia support from the babel syste
+m
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf
+Language: indonesian 2017/02/15 v1.0m Bahasa Indonesia support from the babel s
+ystem
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count92
+\U@D=\dimen114
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count93
+))))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks17
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip43
+\plpartopsep=\skip44
+\plitemsep=\skip45
+\plparsep=\skip46
+\pl@lab=\toks18
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks19
+\float@box=\box26
+\@float@everytoks=\toks20
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count95
+\lst@gtempboxa=\box28
+\lst@token=\toks21
+\lst@length=\count96
+\lst@currlwidth=\dimen115
+\lst@column=\count97
+\lst@pos=\count98
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count99
+\lst@lineno=\count100
+\lst@maxwidth=\dimen118
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count101
+\lst@skipnumbers=\count102
+\lst@framebox=\box29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(./00.book.aux)
+\openout1 = `00.book.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.65189pt, 418.36942pt, 89.6519pt)
+* v-part:(T,H,B)=(101.38141pt, 591.38295pt, 152.07211pt)
+* \paperwidth=597.6732pt
+* \paperheight=844.83647pt
+* \textwidth=418.36942pt
+* \textheight=591.38295pt
+* \oddsidemargin=17.3819pt
+* \evensidemargin=17.3819pt
+* \topmargin=-7.88858pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen119
+\scratchbox=\box30
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen120
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \celsius on input line 44.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 44.
+
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 44.
+Package gensymb Info: Using \Omega for \ohm on input line 44.
+
+Package gensymb Warning: Not defining \micro.
+
+\c@lstlisting=\count109
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3]
+<./resources/db-diagram.png, id=15, 743.77875pt x 522.95375pt>
+File: ./resources/db-diagram.png Graphic file (type png)
+<use ./resources/db-diagram.png>
+Package pdftex.def Info: ./resources/db-diagram.png  used on input line 145.
+(pdftex.def)             Requested size: 418.36942pt x 294.16075pt.
+ [4]
+<resources/use-case-diag.png, id=20, 788.9475pt x 568.1225pt>
+File: resources/use-case-diag.png Graphic file (type png)
+<use resources/use-case-diag.png>
+Package pdftex.def Info: resources/use-case-diag.png  used on input line 161.
+(pdftex.def)             Requested size: 418.36942pt x 301.26819pt.
+ [5 <./resources/db-diagram.png>] [6 <./resources/use-case-diag.png>]
+<./resources/class-dia-oauth.png, id=30, 824.07875pt x 576.1525pt>
+File: ./resources/class-dia-oauth.png Graphic file (type png)
+<use ./resources/class-dia-oauth.png>
+Package pdftex.def Info: ./resources/class-dia-oauth.png  used on input line 18
+0.
+(pdftex.def)             Requested size: 418.36942pt x 292.50638pt.
+ [7 <./resources/class-dia-oauth.png>]
+<./resources/class-dia-oauth-1.png, id=37, 323.2075pt x 221.82875pt>
+File: ./resources/class-dia-oauth-1.png Graphic file (type png)
+<use ./resources/class-dia-oauth-1.png>
+Package pdftex.def Info: ./resources/class-dia-oauth-1.png  used on input line 
+191.
+(pdftex.def)             Requested size: 209.18471pt x 143.57092pt.
+<./resources/class-dia-oauth-2.png, id=38, 814.04124pt x 814.04124pt>
+File: ./resources/class-dia-oauth-2.png Graphic file (type png)
+<use ./resources/class-dia-oauth-2.png>
+Package pdftex.def Info: ./resources/class-dia-oauth-2.png  used on input line 
+200.
+(pdftex.def)             Requested size: 418.36942pt x 418.37263pt.
+ [8 <./resources/class-dia-oauth-1.png>]
+<./resources/class-dia-oauth-3.png, id=43, 372.39125pt x 191.71625pt>
+File: ./resources/class-dia-oauth-3.png Graphic file (type png)
+<use ./resources/class-dia-oauth-3.png>
+Package pdftex.def Info: ./resources/class-dia-oauth-3.png  used on input line 
+209.
+(pdftex.def)             Requested size: 209.18471pt x 107.69678pt.
+[9 <./resources/class-dia-oauth-2.png>]
+<./resources/class-dia-oauth-4.png, id=48, 829.0975pt x 221.82875pt>
+File: ./resources/class-dia-oauth-4.png Graphic file (type png)
+<use ./resources/class-dia-oauth-4.png>
+Package pdftex.def Info: ./resources/class-dia-oauth-4.png  used on input line 
+218.
+(pdftex.def)             Requested size: 418.36942pt x 111.93631pt.
+<./resources/class-dia-oauth-5.png, id=49, 221.82875pt x 181.67876pt>
+File: ./resources/class-dia-oauth-5.png Graphic file (type png)
+<use ./resources/class-dia-oauth-5.png>
+Package pdftex.def Info: ./resources/class-dia-oauth-5.png  used on input line 
+227.
+(pdftex.def)             Requested size: 167.3452pt x 137.05434pt.
+ [10 <./resources/class-dia-oauth-3.png> <./resources/class-dia-oauth-4.png>]
+<./resources/class-dia-resource-1.png, id=55, 241.90375pt x 161.60374pt>
+File: ./resources/class-dia-resource-1.png Graphic file (type png)
+<use ./resources/class-dia-resource-1.png>
+Package pdftex.def Info: ./resources/class-dia-resource-1.png  used on input li
+ne 242.
+(pdftex.def)             Requested size: 125.5121pt x 83.84949pt.
+<./resources/class-dia-resource-2.png, id=56, 573.14125pt x 241.90375pt>
+File: ./resources/class-dia-resource-2.png Graphic file (type png)
+<use ./resources/class-dia-resource-2.png>
+Package pdftex.def Info: ./resources/class-dia-resource-2.png  used on input li
+ne 251.
+(pdftex.def)             Requested size: 334.69681pt x 141.26765pt.
+ [11 <./resources/class-dia-oauth-5.png> <./resources/class-dia-resource-1.png>
+]
+<./resources/class-dia-resource-3.png, id=62, 743.77875pt x 904.37875pt>
+File: ./resources/class-dia-resource-3.png Graphic file (type png)
+<use ./resources/class-dia-resource-3.png>
+Package pdftex.def Info: ./resources/class-dia-resource-3.png  used on input li
+ne 260.
+(pdftex.def)             Requested size: 418.36942pt x 508.7118pt.
+ [12 <./resources/class-dia-resource-2.png>] [13 <./resources/class-dia-resourc
+e-3.png>]
+<./resources/class-dia-resource-4.png, id=72, 241.90375pt x 241.90375pt>
+File: ./resources/class-dia-resource-4.png Graphic file (type png)
+<use ./resources/class-dia-resource-4.png>
+Package pdftex.def Info: ./resources/class-dia-resource-4.png  used on input li
+ne 269.
+(pdftex.def)             Requested size: 125.5121pt x 125.51382pt.
+<./resources/class-dia-resource-5.png, id=73, 834.11626pt x 633.36626pt>
+File: ./resources/class-dia-resource-5.png Graphic file (type png)
+<use ./resources/class-dia-resource-5.png>
+Package pdftex.def Info: ./resources/class-dia-resource-5.png  used on input li
+ne 278.
+(pdftex.def)             Requested size: 418.36942pt x 317.67778pt.
+ [14 <./resources/class-dia-resource-4.png>]
+<./resources/class-dia-resource-6.png, id=78, 392.46625pt x 322.20375pt>
+File: ./resources/class-dia-resource-6.png Graphic file (type png)
+<use ./resources/class-dia-resource-6.png>
+Package pdftex.def Info: ./resources/class-dia-resource-6.png  used on input li
+ne 287.
+(pdftex.def)             Requested size: 209.18471pt x 171.7357pt.
+ [15 <./resources/class-dia-resource-5.png>]
+<./resources/class-dia-resource-7.png, id=83, 362.35374pt x 241.90375pt>
+File: ./resources/class-dia-resource-7.png Graphic file (type png)
+<use ./resources/class-dia-resource-7.png>
+Package pdftex.def Info: ./resources/class-dia-resource-7.png  used on input li
+ne 296.
+(pdftex.def)             Requested size: 209.18471pt x 139.65092pt.
+<./resources/class-dia-resource-8.png, id=84, 700.6175pt x 874.26625pt>
+File: ./resources/class-dia-resource-8.png Graphic file (type png)
+<use ./resources/class-dia-resource-8.png>
+Package pdftex.def Info: ./resources/class-dia-resource-8.png  used on input li
+ne 305.
+(pdftex.def)             Requested size: 418.36942pt x 522.06918pt.
+ [16 <./resources/class-dia-resource-6.png> <./resources/class-dia-resource-7.p
+ng>] [17 <./resources/class-dia-resource-8.png>]
+<./resources/class-dia-fe-1.png, id=94, 472.76625pt x 591.20876pt>
+File: ./resources/class-dia-fe-1.png Graphic file (type png)
+<use ./resources/class-dia-fe-1.png>
+Package pdftex.def Info: ./resources/class-dia-fe-1.png  used on input line 318
+.
+(pdftex.def)             Requested size: 334.69681pt x 418.56134pt.
+ [18 <./resources/class-dia-fe-1.png>]
+<./resources/class-dia-fe-2.png, id=99, 2445.135pt x 701.62125pt>
+File: ./resources/class-dia-fe-2.png Graphic file (type png)
+<use ./resources/class-dia-fe-2.png>
+Package pdftex.def Info: ./resources/class-dia-fe-2.png  used on input line 327
+.
+(pdftex.def)             Requested size: 418.36942pt x 120.04485pt.
+<./resources/class-dia-services.png, id=100, 603.25375pt x 493.845pt>
+File: ./resources/class-dia-services.png Graphic file (type png)
+<use ./resources/class-dia-services.png>
+Package pdftex.def Info: ./resources/class-dia-services.png  used on input line
+ 336.
+(pdftex.def)             Requested size: 418.36942pt x 342.48656pt.
+ [19 <./resources/class-dia-fe-2.png>]
+<./resources/class-dia-dialog.png, id=106, 824.07875pt x 943.525pt>
+File: ./resources/class-dia-dialog.png Graphic file (type png)
+<use ./resources/class-dia-dialog.png>
+Package pdftex.def Info: ./resources/class-dia-dialog.png  used on input line 3
+45.
+(pdftex.def)             Requested size: 418.36942pt x 479.01743pt.
+ [20 <./resources/class-dia-services.png>]
+<./resources/package-dia-oauth-server.png, id=111, 342.27875pt x 141.52875pt>
+File: ./resources/package-dia-oauth-server.png Graphic file (type png)
+<use ./resources/package-dia-oauth-server.png>
+Package pdftex.def Info: ./resources/package-dia-oauth-server.png  used on inpu
+t line 356.
+(pdftex.def)             Requested size: 209.18471pt x 86.49869pt.
+ [21 <./resources/class-dia-dialog.png>]
+<./resources/package-dia-resource-server.png, id=116, 312.16624pt x 191.71625pt
+>
+File: ./resources/package-dia-resource-server.png Graphic file (type png)
+<use ./resources/package-dia-resource-server.png>
+Package pdftex.def Info: ./resources/package-dia-resource-server.png  used on i
+nput line 381.
+(pdftex.def)             Requested size: 209.18471pt x 128.47261pt.
+ [22 <./resources/package-dia-oauth-server.png>]
+[23 <./resources/package-dia-resource-server.png>]
+<./resources/package-dia-fe.png, id=125, 457.71pt x 191.71625pt>
+File: ./resources/package-dia-fe.png Graphic file (type png)
+<use ./resources/package-dia-fe.png>
+Package pdftex.def Info: ./resources/package-dia-fe.png  used on input line 409
+.
+(pdftex.def)             Requested size: 292.8573pt x 122.67165pt.
+ [24 <./resources/package-dia-fe.png>]
+<./resources/comp-dia-oauth.png, id=130, 817.0525pt x 543.02875pt>
+File: ./resources/comp-dia-oauth.png Graphic file (type png)
+<use ./resources/comp-dia-oauth.png>
+Package pdftex.def Info: ./resources/comp-dia-oauth.png  used on input line 441
+.
+(pdftex.def)             Requested size: 418.36942pt x 278.05959pt.
+ [25]
+<./resources/comp-dia-resource.png, id=135, 801.99625pt x 865.2325pt>
+File: ./resources/comp-dia-resource.png Graphic file (type png)
+<use ./resources/comp-dia-resource.png>
+Package pdftex.def Info: ./resources/comp-dia-resource.png  used on input line 
+450.
+(pdftex.def)             Requested size: 418.36942pt x 451.36255pt.
+ [26 <./resources/comp-dia-oauth.png>]
+<./resources/comp-dia-fe.png, id=140, 1180.41pt x 1098.1025pt>
+File: ./resources/comp-dia-fe.png Graphic file (type png)
+<use ./resources/comp-dia-fe.png>
+Package pdftex.def Info: ./resources/comp-dia-fe.png  used on input line 459.
+(pdftex.def)             Requested size: 418.36942pt x 389.18402pt.
+ [27 <./resources/comp-dia-resource.png>] [28 <./resources/comp-dia-fe.png>]
+<./resources/deploy-dia.png, id=149, 532.99126pt x 342.27875pt>
+File: ./resources/deploy-dia.png Graphic file (type png)
+<use ./resources/deploy-dia.png>
+Package pdftex.def Info: ./resources/deploy-dia.png  used on input line 476.
+(pdftex.def)             Requested size: 418.36942pt x 268.67894pt.
+ [29 <./resources/deploy-dia.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 492.
+
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 492.
+<./resources/comm-dia-login.png, id=154, 744.7825pt x 246.9225pt>
+File: ./resources/comm-dia-login.png Graphic file (type png)
+<use ./resources/comm-dia-login.png>
+Package pdftex.def Info: ./resources/comm-dia-login.png  used on input line 498
+.
+(pdftex.def)             Requested size: 418.36942pt x 138.70892pt.
+ [30 <./resources/comm-dia-login.png>]
+<./resources/comm-dia-list-user.png, id=160, 571.13374pt x 261.97874pt>
+File: ./resources/comm-dia-list-user.png Graphic file (type png)
+<use ./resources/comm-dia-list-user.png>
+Package pdftex.def Info: ./resources/comm-dia-list-user.png  used on input line
+ 520.
+(pdftex.def)             Requested size: 418.36942pt x 191.90646pt.
+ [31 <./resources/comm-dia-list-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+[]\OT1/cmr/m/n/12 Komponen \OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 ak-an m
+eng-i-rimk-an da-ta ke ke
+ []
+
+<./resources/comm-dia-add-user.png, id=166, 755.82375pt x 573.14125pt>
+File: ./resources/comm-dia-add-user.png Graphic file (type png)
+<use ./resources/comm-dia-add-user.png>
+Package pdftex.def Info: ./resources/comm-dia-add-user.png  used on input line 
+543.
+(pdftex.def)             Requested size: 418.36942pt x 317.24886pt.
+[32] [33 <./resources/comm-dia-add-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 566--568
+[]\OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 ak-an mem-be-rik-an da-ta ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--572
+[]\OT1/cmr/m/n/12 Bila da-ta peng-gu-na be-lum per-nah ter-daf-tar se-be-lum-ny
+a,
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 570--572
+\OT1/cmtt/m/n/12 AddUserComponent \OT1/cmr/m/n/12 ak-an me-la-kuk-an pe-mang-gi
+l-an ke kom-po-nen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--576
+[]\OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 me-la-kuk-an \OT1/cmr/m/it/12 re
+-qu-est \OT1/cmr/m/n/12 ke \OT1/cmr/m/it/12 re-so-ur-ce se-rver \OT1/cmr/m/n/12
+ me-la-lui
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 574--576
+\OT1/cmtt/m/n/12 UserController \OT1/cmr/m/n/12 dan meng-i-rimk-an da-ta peng-g
+u-na un-tuk di-simp-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 SaveUserProgressComponent \OT1/cmr/m/n/
+12 meng-i-rimk-an sta-tus-nya ke
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+[]\OT1/cmr/m/n/12 Kemudian \OT1/cmtt/m/n/12 AddUserComponent \OT1/cmr/m/n/12 me
+-la-kuk-an pe-mang-gil-an ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+\OT1/cmtt/m/n/12 InfoDialogComponent \OT1/cmr/m/n/12 un-tuk mem-be-ri-ta-hu pen
+g-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce
+ []
+
+<./resources/comm-dia-update-user.png, id=177, 695.59875pt x 507.8975pt>
+File: ./resources/comm-dia-update-user.png Graphic file (type png)
+<use ./resources/comm-dia-update-user.png>
+Package pdftex.def Info: ./resources/comm-dia-update-user.png  used on input li
+ne 594.
+(pdftex.def)             Requested size: 418.36942pt x 305.4771pt.
+[35 <./resources/comm-dia-update-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 605--607
+[]\OT1/cmr/m/n/12 Komponen \OT1/cmtt/m/n/12 EditUserComponent \OT1/cmr/m/n/12 m
+em-bu-ka kom-po-nen
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 607--609
+[]\OT1/cmr/m/n/12 Komponen \OT1/cmtt/m/n/12 SaveUserProgressComponent \OT1/cmr/
+m/n/12 me-la-kuk-an pe-mang-gil-an
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 611--613
+[]\OT1/cmtt/m/n/12 UserController \OT1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-an f
+ung-si \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik ke-las
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--619
+[]\OT1/cmr/m/n/12 Objek \OT1/cmtt/m/n/12 Users \OT1/cmr/m/n/12 ak-an di-kem-ba-
+lik-an oleh \OT1/cmtt/m/n/12 UsersService \OT1/cmr/m/n/12 ke
+ []
+
+[36]
+<./resources/comm-dia-hapus-user.png, id=185, 695.59875pt x 477.785pt>
+File: ./resources/comm-dia-hapus-user.png Graphic file (type png)
+<use ./resources/comm-dia-hapus-user.png>
+Package pdftex.def Info: ./resources/comm-dia-hapus-user.png  used on input lin
+e 635.
+(pdftex.def)             Requested size: 418.36942pt x 287.3658pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+[]\OT1/cmr/m/n/12 Pengguna (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cmr/m/n/12 )
+ me-la-kuk-an ha-pus da-ta da-ri
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+[]\OT1/cmtt/m/n/12 ListUserComponent \OT1/cmr/m/n/12 me-mang-gil kom-po-nen
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 647--648
+\OT1/cmtt/m/n/12 KonfirmasiDialogComponent \OT1/cmr/m/n/12 un-tuk me-mas-tik-an
+ bah-wa peng-gu-
+ []
+
+[37 <./resources/comm-dia-hapus-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+[]\OT1/cmr/m/n/12 Komponen \OT1/cmtt/m/n/12 ListUserComponent \OT1/cmr/m/n/12 m
+e-mang-gil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
+[]\OT1/cmtt/m/n/12 UserController \OT1/cmr/m/n/12 meng-i-rimk-an \OT1/cmr/m/it/
+12 res-pon-se \OT1/cmr/m/n/12 ke \OT1/cmr/m/it/12 front-end \OT1/cmr/m/n/12 me-
+la-lui
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--672
+[]\OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 meng-em-ba-lik-an ha-sil ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
+[]\OT1/cmtt/m/n/12 RemoveUserProgressDialogComponent \OT1/cmr/m/n/12 meng-em-ba
+-lik-an sta-tus ke
+ []
+
+[38]
+<./resources/comm-dia-list-role.png, id=194, 585.18625pt x 482.80376pt>
+File: ./resources/comm-dia-list-role.png Graphic file (type png)
+<use ./resources/comm-dia-list-role.png>
+Package pdftex.def Info: ./resources/comm-dia-list-role.png  used on input line
+ 687.
+(pdftex.def)             Requested size: 418.36942pt x 345.18733pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
+[]\OT1/cmtt/m/n/12 ListRoleComponent \OT1/cmr/m/n/12 me-mang-gil \OT1/cmr/m/it/
+12 me-thod \OT1/cmtt/m/n/12 getAllRole() \OT1/cmr/m/n/12 mi-lik
+ []
+
+[39 <./resources/comm-dia-list-role.png>]
+Underfull \hbox (badness 3098) in paragraph at lines 708--709
+[]\OT1/cmtt/m/n/12 RolesService \OT1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-an \OT
+1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 findAll() \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
+[]\OT1/cmtt/m/n/12 RolesRepo \OT1/cmr/m/n/12 meng-em-ba-lik-an daf-tar hak ak-s
+es da-lam ben-tuk
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 717--718
+[]\OT1/cmtt/m/n/12 RoleController \OT1/cmr/m/n/12 ak-an mem-be-rik-an \OT1/cmr/
+m/it/12 res-pon-se \OT1/cmr/m/n/12 ke \OT1/cmr/m/it/12 front-end \OT1/cmr/m/n/1
+2 ber-u-pa
+ []
+
+<./resources/comm-dia-add-role.png, id=199, 715.67375pt x 558.085pt>
+File: ./resources/comm-dia-add-role.png Graphic file (type png)
+<use ./resources/comm-dia-add-role.png>
+Package pdftex.def Info: ./resources/comm-dia-add-role.png  used on input line 
+730.
+(pdftex.def)             Requested size: 418.36942pt x 326.25275pt.
+[40]
+Overfull \hbox (13.51962pt too wide) in paragraph at lines 742--743
+[]\OT1/cmtt/m/n/12 AddRoleComponent \OT1/cmr/m/n/12 meng-ak-tifk-an \OT1/cmtt/m
+/n/12 SearchRoleProgressDialogComponent
+ []
+
+[41 <./resources/comm-dia-add-role.png>]
+Underfull \hbox (badness 1584) in paragraph at lines 754--755
+[]\OT1/cmtt/m/n/12 RolesService \OT1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-an \OT
+1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 findById() \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+[]\OT1/cmtt/m/n/12 RoleService \OT1/cmr/m/n/12 meng-em-ba-lik-an ni-lai ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+[]\OT1/cmtt/m/n/12 AddRoleComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-an
+ ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+\OT1/cmtt/m/n/12 SaveRoleProgressDialogComponent \OT1/cmr/m/n/12 un-tuk me-la-k
+uk-an simp-an
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 799--800
+[]\OT1/cmtt/m/n/12 SaveRoleProgressDialogComponent \OT1/cmr/m/n/12 mem-be-rik-a
+n sta-tus ke
+ []
+
+<./resources/comm-dia-edit-role.png, id=210, 695.59875pt x 548.0475pt>
+File: ./resources/comm-dia-edit-role.png Graphic file (type png)
+<use ./resources/comm-dia-edit-role.png>
+Package pdftex.def Info: ./resources/comm-dia-edit-role.png  used on input line
+ 812.
+(pdftex.def)             Requested size: 418.36942pt x 329.62547pt.
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 824--825
+[]\OT1/cmtt/m/n/12 EditRoleComponent \OT1/cmr/m/n/12 me-mang-gil kom-po-nen
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 827--828
+[]\OT1/cmtt/m/n/12 SaveRoleProgressDialogComponent \OT1/cmr/m/n/12 me-la-kuk-an
+ ak-ses ke \OT1/cmr/m/it/12 me-thod
+ []
+
+[44 <./resources/comm-dia-edit-role.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
+[]\OT1/cmtt/m/n/12 RoleController \OT1/cmr/m/n/12 me-la-kuk-an \OT1/cmr/m/it/12
+ res-pon-se \OT1/cmr/m/n/12 ke \OT1/cmr/m/it/12 front-end \OT1/cmr/m/n/12 me-la
+-lui
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 848--849
+[]\OT1/cmtt/m/n/12 RoleService \OT1/cmr/m/n/12 meng-i-rimk-an da-ta da-ri \OT1/
+cmr/m/it/12 res-pon-se re-so-ur-ce se-rver \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+[]\OT1/cmtt/m/n/12 SaveRoleProgressDialogComponent \OT1/cmr/m/n/12 meng-i-rimk-
+an sta-tus ke
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 851--852
+\OT1/cmtt/m/n/12 EditRoleComponent \OT1/cmr/m/n/12 se-ba-gai tan-da apa-kah sim
+p-an da-ta ber-ha-sil
+ []
+
+<./resources/comm-dia-remove-role.png, id=219, 725.71124pt x 532.99126pt>
+File: ./resources/comm-dia-remove-role.png Graphic file (type png)
+<use ./resources/comm-dia-remove-role.png>
+Package pdftex.def Info: ./resources/comm-dia-remove-role.png  used on input li
+ne 864.
+(pdftex.def)             Requested size: 418.36942pt x 307.27274pt.
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 876--877
+[]\OT1/cmtt/m/n/12 ListRoleComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-a
+n
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 876--877
+\OT1/cmtt/m/n/12 KonfirmasiDialogComponent \OT1/cmr/m/n/12 un-tuk me-mas-tik-an
+ bah-wa peng-gu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+[]\OT1/cmtt/m/n/12 ListRoleComponent \OT1/cmr/m/n/12 ak-an meng-ak-tifk-an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+\OT1/cmtt/m/n/12 RemoveRoleProgressDialogComponent \OT1/cmr/m/n/12 un-tuk me-la
+-kuk-an pro-ses
+ []
+
+[46 <./resources/comm-dia-remove-role.png>]
+Underfull \hbox (badness 1867) in paragraph at lines 885--886
+[]\OT1/cmtt/m/n/12 RemoveRoleProgressDialogComponent \OT1/cmr/m/n/12 me-la-kuk-
+an ak-ses ke fung-si
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 891--892
+[]\OT1/cmtt/m/n/12 RoleController \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \OT1/c
+mr/m/it/12 me-thod \OT1/cmtt/m/n/12 remove \OT1/cmr/m/n/12 mi-lik ke-las
+ []
+
+
+Underfull \hbox (badness 6792) in paragraph at lines 894--895
+[]\OT1/cmtt/m/n/12 RolesService \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \OT1/cmr
+/m/it/12 me-thod \OT1/cmtt/m/n/12 deleteById \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 897--898
+[]\OT1/cmr/m/n/12 Setelah \OT1/cmtt/m/n/12 RolesRepo \OT1/cmr/m/n/12 meng-ha-pu
+s da-ta hak ak-ses pa-da sis-tem da-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 906--907
+[]\OT1/cmtt/m/n/12 RoleService \OT1/cmr/m/n/12 ak-an meng-em-ba-lik-an ni-lai k
+e
+ []
+
+<./resources/comm-dia-list-user-role.png, id=227, 706.64pt x 497.86pt>
+File: ./resources/comm-dia-list-user-role.png Graphic file (type png)
+<use ./resources/comm-dia-list-user-role.png>
+Package pdftex.def Info: ./resources/comm-dia-list-user-role.png  used on input
+ line 919.
+(pdftex.def)             Requested size: 418.36942pt x 294.7604pt.
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 931--932
+[]\OT1/cmtt/m/n/12 AssignUserRoleComponent \OT1/cmr/m/n/12 me-la-kuk-an ak-ses 
+ke fung-si
+ []
+
+[48 <./resources/comm-dia-list-user-role.png>]
+Underfull \hbox (badness 6792) in paragraph at lines 940--941
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \OT1/
+cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 findAll \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 952--953
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 ak-an mem-be-rik-an ni-lai k
+e
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 952--953
+\OT1/cmtt/m/n/12 AssignUserRoleComponent \OT1/cmr/m/n/12 da-lam ben-tuk \OT1/cm
+tt/m/n/12 Observable \OT1/cmr/m/n/12 un-tuk ke-
+ []
+
+<./resources/comm-dia-add-user-role.png, id=235, 755.82375pt x 563.10374pt>
+File: ./resources/comm-dia-add-user-role.png Graphic file (type png)
+<use ./resources/comm-dia-add-user-role.png>
+Package pdftex.def Info: ./resources/comm-dia-add-user-role.png  used on input 
+line 962.
+(pdftex.def)             Requested size: 418.36942pt x 311.69283pt.
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
+[]\OT1/cmtt/m/n/12 AssignUserRoleComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang
+-gil-an ke
+ []
+
+[50 <./resources/comm-dia-add-user-role.png>]
+Underfull \hbox (badness 6792) in paragraph at lines 983--984
+[]\OT1/cmtt/m/n/12 UserRoleController \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \O
+T1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--987
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \OT1/
+cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 992--993
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-ne-rusk-an ni-lai da-ri o
+b-jek \OT1/cmtt/m/n/12 UserRole \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--999
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 ak-an meng-em-ba-lik-an ni-l
+ai ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
+[]\OT1/cmtt/m/n/12 SaveUserRoleProgressDialogComponent \OT1/cmr/m/n/12 ak-an me
+ng-em-ba-lik-an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
+\OT1/cmr/m/n/12 se-bu-ah sta-tus ke \OT1/cmtt/m/n/12 AssignUserRoleComponent \O
+T1/cmr/m/n/12 un-tuk ke-mu-di-an
+ []
+
+<./resources/comm-dia-remove-user-role.png, id=245, 795.97375pt x 522.95375pt>
+File: ./resources/comm-dia-remove-user-role.png Graphic file (type png)
+<use ./resources/comm-dia-remove-user-role.png>
+Package pdftex.def Info: ./resources/comm-dia-remove-user-role.png  used on inp
+ut line 1011.
+(pdftex.def)             Requested size: 418.36942pt x 274.86603pt.
+[51] [52 <./resources/comm-dia-remove-user-role.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1024
+[]\OT1/cmtt/m/n/12 AssignUserRoleComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang
+-gil-an ke
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 1035--1036
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke \OT1/
+cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 deleteById \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1042
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-ne-rusk-an res-pon ber-u-
+pa ke-las \OT1/cmtt/m/n/12 Unit \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 1044--1045
+\OT1/cmr/m/n/12 u-pa ke-las \OT1/cmtt/m/n/12 Unit \OT1/cmr/m/n/12 da-lam ben-tu
+k JSON, da-lam hal ini ke ke-las
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+[]\OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 me-ne-rusk-an \OT1/cmr/m/it/
+12 res-pon-se \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+\OT1/cmtt/m/n/12 RemoveUserRoleProgressDialogComponent \OT1/cmr/m/n/12 da-lam b
+en-tuk
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 1050--1051
+[]\OT1/cmtt/m/n/12 RemoveUserRoleProgressDialogComponent \OT1/cmr/m/n/12 mem-be
+-rik-an sta-tus ke
+ []
+
+[53]
+<./resources/comm-dia-list-client.png, id=256, 673.51625pt x 429.605pt>
+File: ./resources/comm-dia-list-client.png Graphic file (type png)
+<use ./resources/comm-dia-list-client.png>
+Package pdftex.def Info: ./resources/comm-dia-list-client.png  used on input li
+ne 1060.
+(pdftex.def)             Requested size: 418.36942pt x 266.86365pt.
+ [54 <./resources/comm-dia-list-client.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+[]\OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/12 ak-an me-ne-rusk-a
+n da-ta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+\OT1/cmr/m/n/12 ke \OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 da-la
+m ben-tuk ob-jek da-ri
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 1093--1094
+\OT1/cmr/m/it/12 po-nent \OT1/cmr/m/n/12 un-tuk di-tam-pilk-an da-lam ta-bel na
+n-ti-nya da-lam ben-tuk
+ []
+
+<./resources/comm-dia-add-client.png, id=261, 785.93625pt x 613.29124pt>
+File: ./resources/comm-dia-add-client.png Graphic file (type png)
+<use ./resources/comm-dia-add-client.png>
+Package pdftex.def Info: ./resources/comm-dia-add-client.png  used on input lin
+e 1103.
+(pdftex.def)             Requested size: 418.36942pt x 326.47458pt.
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
+[]\OT1/cmtt/m/n/12 AddOauthClientComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang
+-gil-an ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1116
+\OT1/cmtt/m/n/12 CheckOauthClientProgressDialogComponent \OT1/cmr/m/n/12 un-tuk
+ me-la-kuk-an
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 1118--1119
+[]\OT1/cmtt/m/n/12 CheckOauthClientProgressDialogComponent \OT1/cmr/m/n/12 me-l
+a-kuk-an ak-ses ke
+ []
+
+[56 <./resources/comm-dia-add-client.png>]
+Underfull \hbox (badness 1248) in paragraph at lines 1130--1131
+[]\OT1/cmr/m/n/12 Hasil da-ri ak-ses ke sis-tem ba-sis da-ta, \OT1/cmtt/m/n/12 
+OauthClientDetailsRepo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
+[]\OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/12 me-ne-rusk-an ob-j
+ek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1146
+[]\OT1/cmtt/m/n/12 AddOauthClientComponent \OT1/cmr/m/n/12 me-la-kuk-an pe-mang
+-gil-an ke
+ []
+
+[57]
+Underfull \hbox (badness 7012) in paragraph at lines 1148--1149
+[]\OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 me-la
+-kuk-an ak-ses ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1155
+[]\OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
+[]\OT1/cmr/m/n/12 Setelah me-la-lui pro-ses simp-an da-ta ke sis-tem ba-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
+\OT1/cmr/m/n/12 sis da-ta, \OT1/cmtt/m/n/12 OauthClientDetailsRepo \OT1/cmr/m/n
+/12 meng-em-ba-lik-an ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1161
+\OT1/cmr/m/n/12 lai ke \OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/
+12 da-lam ben-tuk ob-jek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
+[]\OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/12 me-ne-rusk-an ob-j
+ek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
+[]\OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 mem-be-rik-an \OT1/cmr
+/m/it/12 res-pon-se \OT1/cmr/m/n/12 ber-u-pa
+ []
+
+[58]
+<./resources/comm-dia-edit-client.png, id=276, 755.82375pt x 538.01pt>
+File: ./resources/comm-dia-edit-client.png Graphic file (type png)
+<use ./resources/comm-dia-edit-client.png>
+Package pdftex.def Info: ./resources/comm-dia-edit-client.png  used on input li
+ne 1185.
+(pdftex.def)             Requested size: 418.36942pt x 297.80276pt.
+ [59 <./resources/comm-dia-edit-client.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
+[]\OT1/cmtt/m/n/12 EditOauthClientComponent \OT1/cmr/m/n/12 me-mang-gil
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 1197--1198
+\OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 un-tuk 
+me-mu-lai pro-
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 1200--1201
+[]\OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 me-la
+-kuk-an ak-ses ke
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 1206--1207
+[]\OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 me-la-kuk-an ak-ses ke
+ \OT1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1213
+[]\OT1/cmr/m/n/12 Setelah me-la-kuk-an simp-an da-ta ke sis-tem ba-sis da-ta,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
+[]\OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/12 me-ne-rusk-an ni-l
+ai ber-u-pa ob-jek
+ []
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
+[]\OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 ak-an
+ meng-em-ba-lik-an
+ []
+
+<./resources/comm-dia-remove-client.png, id=284, 785.93625pt x 517.935pt>
+File: ./resources/comm-dia-remove-client.png Graphic file (type png)
+<use ./resources/comm-dia-remove-client.png>
+Package pdftex.def Info: ./resources/comm-dia-remove-client.png  used on input 
+line 1237.
+(pdftex.def)             Requested size: 418.36942pt x 275.7134pt.
+[61]
+Underfull \hbox (badness 7540) in paragraph at lines 1246--1247
+[]\OT1/cmr/m/n/12 Pengguna me-la-kuk-an ak-si ha-pus da-ta apli-ka-si kli-en me
+-la-lui
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
+[]\OT1/cmtt/m/n/12 ListOauthClientComponent \OT1/cmr/m/n/12 me-mang-gil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
+\OT1/cmtt/m/n/12 RemoveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 un-tu
+k me-mu-lai
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 1249--1250
+\OT1/cmr/m/n/12 pro-ses ha-pus da-ta apli-ka-si kli-en dan peng-gu-na (\OT1/cmr
+/m/it/12 re-so-ur-ce owner\OT1/cmr/m/n/12 )
+ []
+
+[62 <./resources/comm-dia-remove-client.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1268
+[]\OT1/cmtt/m/n/12 OauthClientDetails Service \OT1/cmr/m/n/12 me-ne-rusk-an ob-
+jek \OT1/cmtt/m/n/12 Unit \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1273--1274
+[]\OT1/cmtt/m/n/12 OauthClientService \OT1/cmr/m/n/12 me-ne-rusk-an ha-sil \OT1
+/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1273--1274
+\OT1/cmtt/m/n/12 RemoveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 da-la
+m ben-tuk
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 1276--1277
+[]\OT1/cmtt/m/n/12 RemoveOauthClientProgressDialogComponent \OT1/cmr/m/n/12 mem
+-be-rik-an se-bu-ah
+ []
+
+[63]
+<./resources/act-dia-login.png, id=296, 397.485pt x 210.7875pt>
+File: ./resources/act-dia-login.png Graphic file (type png)
+<use ./resources/act-dia-login.png>
+Package pdftex.def Info: ./resources/act-dia-login.png  used on input line 1298
+.
+(pdftex.def)             Requested size: 209.18471pt x 110.93526pt.
+<./resources/act-dia-list-user.png, id=297, 643.40375pt x 146.5475pt>
+File: ./resources/act-dia-list-user.png Graphic file (type png)
+<use ./resources/act-dia-list-user.png>
+Package pdftex.def Info: ./resources/act-dia-list-user.png  used on input line 
+1314.
+(pdftex.def)             Requested size: 418.36942pt x 95.29498pt.
+ [64 <./resources/act-dia-login.png>]
+<./resources/act-dia-add-user.png, id=302, 553.06625pt x 226.8475pt>
+File: ./resources/act-dia-add-user.png Graphic file (type png)
+<use ./resources/act-dia-add-user.png>
+Package pdftex.def Info: ./resources/act-dia-add-user.png  used on input line 1
+328.
+(pdftex.def)             Requested size: 418.36942pt x 171.59938pt.
+ [65 <./resources/act-dia-list-user.png>]
+<./resources/act-dia-edit-user.png, id=307, 563.10374pt x 216.81pt>
+File: ./resources/act-dia-edit-user.png Graphic file (type png)
+<use ./resources/act-dia-edit-user.png>
+Package pdftex.def Info: ./resources/act-dia-edit-user.png  used on input line 
+1342.
+(pdftex.def)             Requested size: 418.36942pt x 161.0853pt.
+ [66 <./resources/act-dia-add-user.png>]
+<./resources/act-dia-remove-user.png, id=312, 512.91624pt x 161.60374pt>
+File: ./resources/act-dia-remove-user.png Graphic file (type png)
+<use ./resources/act-dia-remove-user.png>
+Package pdftex.def Info: ./resources/act-dia-remove-user.png  used on input lin
+e 1356.
+(pdftex.def)             Requested size: 418.36942pt x 131.81561pt.
+ [67 <./resources/act-dia-edit-user.png>]
+<./resources/act-dia-list-role.png, id=318, 452.69125pt x 241.90375pt>
+File: ./resources/act-dia-list-role.png Graphic file (type png)
+<use ./resources/act-dia-list-role.png>
+Package pdftex.def Info: ./resources/act-dia-list-role.png  used on input line 
+1370.
+(pdftex.def)             Requested size: 418.36942pt x 223.56183pt.
+ [68 <./resources/act-dia-remove-user.png>]
+<./resources/act-dia-add-role.png, id=323, 432.61626pt x 272.01625pt>
+File: ./resources/act-dia-add-role.png Graphic file (type png)
+<use ./resources/act-dia-add-role.png>
+Package pdftex.def Info: ./resources/act-dia-add-role.png  used on input line 1
+384.
+(pdftex.def)             Requested size: 418.36942pt x 263.07097pt.
+ [69 <./resources/act-dia-list-role.png>]
+<./resources/act-dia-edit-role.png, id=328, 452.69125pt x 287.0725pt>
+File: ./resources/act-dia-edit-role.png Graphic file (type png)
+<use ./resources/act-dia-edit-role.png>
+Package pdftex.def Info: ./resources/act-dia-edit-role.png  used on input line 
+1398.
+(pdftex.def)             Requested size: 418.36942pt x 265.30574pt.
+ [70 <./resources/act-dia-add-role.png>]
+<./resources/act-dia-remove-role.png, id=333, 442.65375pt x 236.885pt>
+File: ./resources/act-dia-remove-role.png Graphic file (type png)
+<use ./resources/act-dia-remove-role.png>
+Package pdftex.def Info: ./resources/act-dia-remove-role.png  used on input lin
+e 1412.
+(pdftex.def)             Requested size: 418.36942pt x 223.90088pt.
+ [71 <./resources/act-dia-edit-role.png>]
+<./resources/act-dia-list-user-role.png, id=338, 432.61626pt x 231.86626pt>
+File: ./resources/act-dia-list-user-role.png Graphic file (type png)
+<use ./resources/act-dia-list-user-role.png>
+Package pdftex.def Info: ./resources/act-dia-list-user-role.png  used on input 
+line 1426.
+(pdftex.def)             Requested size: 418.36942pt x 224.2413pt.
+ [72 <./resources/act-dia-remove-role.png>]
+<./resources/act-dia-add-user-role.png, id=343, 442.65375pt x 292.09125pt>
+File: ./resources/act-dia-add-user-role.png Graphic file (type png)
+<use ./resources/act-dia-add-user-role.png>
+Package pdftex.def Info: ./resources/act-dia-add-user-role.png  used on input l
+ine 1440.
+(pdftex.def)             Requested size: 418.36942pt x 276.08115pt.
+ [73 <./resources/act-dia-list-user-role.png>]
+<./resources/act-dia-remove-user-role.png, id=349, 442.65375pt x 241.90375pt>
+File: ./resources/act-dia-remove-user-role.png Graphic file (type png)
+<use ./resources/act-dia-remove-user-role.png>
+Package pdftex.def Info: ./resources/act-dia-remove-user-role.png  used on inpu
+t line 1454.
+(pdftex.def)             Requested size: 418.36942pt x 228.64453pt.
+ [74 <./resources/act-dia-add-user-role.png>]
+<./resources/act-dia-list-client.png, id=354, 417.56pt x 272.01625pt>
+File: ./resources/act-dia-list-client.png Graphic file (type png)
+<use ./resources/act-dia-list-client.png>
+Package pdftex.def Info: ./resources/act-dia-list-client.png  used on input lin
+e 1468.
+(pdftex.def)             Requested size: 418.36942pt x 272.55931pt.
+ [75 <./resources/act-dia-remove-user-role.png>]
+<./resources/act-dia-add-client.png, id=359, 405.515pt x 246.9225pt>
+File: ./resources/act-dia-add-client.png Graphic file (type png)
+<use ./resources/act-dia-add-client.png>
+Package pdftex.def Info: ./resources/act-dia-add-client.png  used on input line
+ 1482.
+(pdftex.def)             Requested size: 418.36942pt x 254.75497pt.
+ [76 <./resources/act-dia-list-client.png>]
+<./resources/act-dia-edit-client.png, id=364, 405.515pt x 246.9225pt>
+File: ./resources/act-dia-edit-client.png Graphic file (type png)
+<use ./resources/act-dia-edit-client.png>
+Package pdftex.def Info: ./resources/act-dia-edit-client.png  used on input lin
+e 1496.
+(pdftex.def)             Requested size: 418.36942pt x 254.75497pt.
+[77 <./resources/act-dia-add-client.png>]
+<./resources/act-dia-remove-client.png, id=369, 392.46625pt x 206.7725pt>
+File: ./resources/act-dia-remove-client.png Graphic file (type png)
+<use ./resources/act-dia-remove-client.png>
+Package pdftex.def Info: ./resources/act-dia-remove-client.png  used on input l
+ine 1510.
+(pdftex.def)             Requested size: 418.36942pt x 220.43352pt.
+ [78 <./resources/act-dia-edit-client.png>] [79 <./resources/act-dia-remove-cli
+ent.png>]
+<./resources/seq-dia-login.png, id=379, 754.82pt x 363.3575pt>
+File: ./resources/seq-dia-login.png Graphic file (type png)
+<use ./resources/seq-dia-login.png>
+Package pdftex.def Info: ./resources/seq-dia-login.png  used on input line 1530
+.
+(pdftex.def)             Requested size: 418.36942pt x 201.39412pt.
+
+Underfull \hbox (badness 1577) in paragraph at lines 1535--1536
+[]\OT1/cmr/m/n/12 Pertama peng-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cm
+r/m/n/12 ) me-la-kuk-an ak-si un-tuk me-la-kuk-
+ []
+
+<./resources/seq-list-user.png, id=380, 1136.245pt x 443.6575pt>
+File: ./resources/seq-list-user.png Graphic file (type png)
+<use ./resources/seq-list-user.png>
+Package pdftex.def Info: ./resources/seq-list-user.png  used on input line 1548
+.
+(pdftex.def)             Requested size: 418.36942pt x 163.35864pt.
+[80 <./resources/seq-dia-login.png>] [81 <./resources/seq-list-user.png>]
+Underfull \hbox (badness 2111) in paragraph at lines 1561--1562
+[]\OT1/cmr/m/n/12 Kemudian \OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 me-ne-r
+usk-an \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ber-u-pa \OT1/cmtt/m/n/12 Ob
+servable \OT1/cmr/m/n/12 ke
+ []
+
+<./resources/seq-add-user.png, id=389, 1718.42pt x 553.06625pt>
+File: ./resources/seq-add-user.png Graphic file (type png)
+<use ./resources/seq-add-user.png>
+Package pdftex.def Info: ./resources/seq-add-user.png  used on input line 1570.
+
+(pdftex.def)             Requested size: 418.36942pt x 134.64584pt.
+
+Underfull \hbox (badness 1616) in paragraph at lines 1575--1576
+[]\OT1/cmr/m/n/12 Penjelasan da-ri di-a-gram ter-se-but ya-i-tu per-ta-ma, peng
+-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 1575--1576
+\OT1/cmr/m/it/12 owner\OT1/cmr/m/n/12 ), da-lam hal ini yang me-mi-li-ki ke-we-
+nang-an ten-tu sa-ja, me-la-
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 1575--1576
+\OT1/cmr/m/n/12 la-lui \OT1/cmtt/m/n/12 AddUserComponent\OT1/cmr/m/n/12 , ke-mu
+-di-an pro-ses-nya ber-lan-jut me-nam-pilk-an
+ []
+
+[82 <./resources/seq-add-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
+\OT1/cmtt/m/n/12 UserController \OT1/cmr/m/n/12 me-la-kuk-an \OT1/cmr/m/it/12 r
+es-pon-se \OT1/cmr/m/n/12 ke apli-ka-si kli-en, da-lam
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 1579--1580
+\OT1/cmr/m/n/12 hal ini me-la-lui \OT1/cmtt/m/n/12 UserService\OT1/cmr/m/n/12 ,
+ ke-mu-di-an pro-ses da-ta-nya ber-lan-jut
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
+\OT1/cmr/m/n/12 ke \OT1/cmtt/m/n/12 SearchUsernameProgressDialogComponent \OT1/
+cmr/m/n/12 sam-pai kem-ba-li ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1589--1590
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 ke-mu-di-an
+ ak-an meng-i-rimk-an da-ta-nya ke
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 1589--1590
+\OT1/cmtt/m/n/12 SaveUserProgressComponent \OT1/cmr/m/n/12 da-lam ben-tuk \OT1/
+cmtt/m/n/12 Observable \OT1/cmr/m/n/12 yang ke-mu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1592
+[]\OT1/cmr/m/n/12 Setelah \OT1/cmtt/m/n/12 AddUserComponent \OT1/cmr/m/n/12 me-
+nang-kap pes-an da-ri
+ []
+
+[83]
+<./resources/seq-edit-user.png, id=397, 1377.145pt x 492.84125pt>
+File: ./resources/seq-edit-user.png Graphic file (type png)
+<use ./resources/seq-edit-user.png>
+Package pdftex.def Info: ./resources/seq-edit-user.png  used on input line 1600
+.
+(pdftex.def)             Requested size: 418.36942pt x 149.7185pt.
+
+Underfull \hbox (badness 2334) in paragraph at lines 1607--1608
+[]\OT1/cmr/m/n/12 Setelah meng-i-si per-u-bah-an in-for-ma-si da-ta peng-gu-na,
+ ma-ka peng-gu-
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 1609--1610
+[]\OT1/cmr/m/n/12 Kemudian \OT1/cmtt/m/n/12 SaveUserProgressComponent \OT1/cmr/
+m/n/12 me-la-kuk-an ak-ses ke fung-si
+ []
+
+[84 <./resources/seq-edit-user.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1617--1618
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 UserService \OT1/cmr/m/n/12 ke-mu-di-an
+ ak-an meng-em-ba-lik-an da-ta ke
+ []
+
+
+Underfull \hbox (badness 7796) in paragraph at lines 1617--1618
+\OT1/cmtt/m/n/12 SaveUserProgressComponent \OT1/cmr/m/n/12 da-lam ben-tuk \OT1/
+cmtt/m/n/12 Observable\OT1/cmr/m/n/12 , yang ke-
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 1617--1618
+\OT1/cmr/m/n/12 mu-di-an ak-an di-te-rusk-an ke \OT1/cmtt/m/n/12 EditUserCompon
+ent\OT1/cmr/m/n/12 . Da-ri kom-po-nen
+ []
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 1617--1618
+\OT1/cmtt/m/n/12 EditUserComponent \OT1/cmr/m/n/12 ini ke-mu-di-an me-mang-gil 
+\OT1/cmtt/m/n/12 InfoDialogComponent
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 1617--1618
+\OT1/cmr/m/n/12 un-tuk mem-be-ri-ta-huk-an sta-tus ber-ha-sil atau ti-dak-nya h
+a-sil per-u-bah-an
+ []
+
+<./resources/seq-del-user.png, id=402, 1336.995pt x 442.65375pt>
+File: ./resources/seq-del-user.png Graphic file (type png)
+<use ./resources/seq-del-user.png>
+Package pdftex.def Info: ./resources/seq-del-user.png  used on input line 1628.
+
+(pdftex.def)             Requested size: 418.36942pt x 138.5113pt.
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1636
+[]\OT1/cmr/m/n/12 Bila peng-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cmr/m
+/n/12 ) me-la-kuk-an kon-fir-ma-si un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1636
+\OT1/cmr/m/n/12 tuk ha-pus da-ta, pro-ses-nya ak-an ber-lan-jut ke pe-mang-gil-
+an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1640
+[]\OT1/cmr/m/n/12 Kemudian \OT1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 deleteById
+() \OT1/cmr/m/n/12 meng-em-ba-lik-an se-bu-ah ni-lai ke
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 1639--1640
+\OT1/cmtt/m/n/12 UserController \OT1/cmr/m/n/12 dan di-te-rusk-an men-ja-di \OT
+1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ke apli-ka-si kli-en,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1642
+[]\OT1/cmr/m/n/12 Hasil \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ini ke-mu-d
+i-an di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1641--1642
+\OT1/cmtt/m/n/12 InfoDialogComponent \OT1/cmr/m/n/12 un-tuk mem-be-ri-ta-hu pen
+g-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cmr/m/n/12 )
+ []
+
+[86 <./resources/seq-del-user.png>]
+<./resources/seq-list-role.png, id=411, 1155.31625pt x 432.61626pt>
+File: ./resources/seq-list-role.png Graphic file (type png)
+<use ./resources/seq-list-role.png>
+Package pdftex.def Info: ./resources/seq-list-role.png  used on input line 1650
+.
+(pdftex.def)             Requested size: 418.36942pt x 156.6593pt.
+ [87 <./resources/seq-list-role.png>]
+<./resources/seq-add-role.png, id=416, 1647.15375pt x 713.66624pt>
+File: ./resources/seq-add-role.png Graphic file (type png)
+<use ./resources/seq-add-role.png>
+Package pdftex.def Info: ./resources/seq-add-role.png  used on input line 1672.
+
+(pdftex.def)             Requested size: 418.36942pt x 181.26921pt.
+
+[88]
+Underfull \hbox (badness 2376) in paragraph at lines 1679--1680
+[]\OT1/cmr/m/n/12 Setelah peng-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cm
+r/m/n/12 ) meng-i-sik-an da-ta hak ak-ses (\OT1/cmr/m/it/12 ro-
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 1679--1680
+\OT1/cmr/m/it/12 le\OT1/cmr/m/n/12 ), peng-gu-na ak-an me-nek-an tom-bol simp-a
+n yang ak-an me-mi-cu ak-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 1679--1680
+\OT1/cmr/m/n/12 ses ke fung-si \OT1/cmtt/m/n/12 onSaveClick() \OT1/cmr/m/n/12 m
+i-lik \OT1/cmtt/m/n/12 AddRoleComponent\OT1/cmr/m/n/12 . Da-ri da-lam
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 1679--1680
+\OT1/cmr/m/n/12 me-la-lui fung-si \OT1/cmtt/m/n/12 ngOnInit()\OT1/cmr/m/n/12 , 
+ke-mu-di-an da-ri fung-si \OT1/cmtt/m/n/12 ngOnInit() \OT1/cmr/m/n/12 mi-lik
+ []
+
+[89 <./resources/seq-add-role.png>]
+Underfull \hbox (badness 1024) in paragraph at lines 1685--1686
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 RolesService\OT1/cmr/m/n/12 , ob-jek da
+-ri \OT1/cmtt/m/n/12 Optional<Roles> \OT1/cmr/m/n/12 ak-an di-ki-rimk-an ke
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 1691--1692
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 RoleController \OT1/cmr/m/n/12 ke-mu-di
+-an me-la-kuk-an ak-ses ke \OT1/cmr/m/it/12 me-thod \OT1/cmtt/m/n/12 save()
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 1691--1692
+\OT1/cmr/m/n/12 mi-lik \OT1/cmtt/m/n/12 RolesService\OT1/cmr/m/n/12 , yang di d
+a-lam-nya me-la-kuk-an ak-ses ke \OT1/cmr/m/it/12 me-thod
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 1695--1696
+[]\OT1/cmr/m/n/12 Setelah itu \OT1/cmtt/m/n/12 RoleController \OT1/cmr/m/n/12 a
+k-an meng-i-rimk-an se-bu-ah \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1695--1696
+\OT1/cmr/m/n/12 apli-ka-si kli-en me-la-lui \OT1/cmtt/m/n/12 RoleService \OT1/c
+mr/m/n/12 ka-re-na se-be-lum-nya me-la-kuk-an \OT1/cmr/m/it/12 re-
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 1695--1696
+\OT1/cmr/m/it/12 qu-est \OT1/cmr/m/n/12 simp-an da-ta. Da-ri \OT1/cmtt/m/n/12 R
+oleService \OT1/cmr/m/n/12 da-ta-nya di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 2980) in paragraph at lines 1695--1696
+\OT1/cmtt/m/n/12 SaveRoleProgressDialogComponent \OT1/cmr/m/n/12 da-lam ben-tuk
+ \OT1/cmtt/m/n/12 Observable\OT1/cmr/m/n/12 , yang
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 1695--1696
+\OT1/cmr/m/n/12 ke-mu-di-an di-o-lah dan meng-i-rimk-an sta-tus ke \OT1/cmtt/m/
+n/12 AddRoleComponent\OT1/cmr/m/n/12 , da-
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 1695--1696
+\OT1/cmr/m/n/12 ri sta-tus ini ke-mu-di-an \OT1/cmtt/m/n/12 AddRoleComponent \O
+T1/cmr/m/n/12 me-la-kuk-an pe-mang-gil-an ke
+ []
+
+[90]
+<./resources/seq-edit-role.png, id=427, 1416.29124pt x 502.87875pt>
+File: ./resources/seq-edit-role.png Graphic file (type png)
+<use ./resources/seq-edit-role.png>
+Package pdftex.def Info: ./resources/seq-edit-role.png  used on input line 1704
+.
+(pdftex.def)             Requested size: 418.36942pt x 148.54744pt.
+
+Underfull \hbox (badness 4084) in paragraph at lines 1711--1712
+[]\OT1/cmr/m/n/12 Selanjut pa-da sa-at peng-gu-na (\OT1/cmr/m/it/12 user agent\
+OT1/cmr/m/n/12 ) me-la-kuk-an simp-an da-
+ []
+
+[91 <./resources/seq-edit-role.png>]
+Underfull \hbox (badness 1648) in paragraph at lines 1719--1720
+[]\OT1/cmr/m/n/12 Nilai da-ri ob-jek \OT1/cmtt/m/n/12 Roles \OT1/cmr/m/n/12 ke-
+mu-di-an di-ja-dik-an bah-an \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 da-ta 
+ke
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1719--1720
+\OT1/cmr/m/n/12 apli-ka-si kli-en me-la-lui \OT1/cmtt/m/n/12 RoleService \OT1/c
+mr/m/n/12 ka-re-na se-be-lum-nya me-la-kuk-an \OT1/cmr/m/it/12 re-
+ []
+
+<./resources/seq-del-role.png, id=433, 1325.95375pt x 442.65375pt>
+File: ./resources/seq-del-role.png Graphic file (type png)
+<use ./resources/seq-del-role.png>
+Package pdftex.def Info: ./resources/seq-del-role.png  used on input line 1730.
+
+(pdftex.def)             Requested size: 418.36942pt x 139.6663pt.
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 1737--1738
+[]\OT1/cmr/m/n/12 Setelah peng-gu-na (\OT1/cmr/m/it/12 user agent\OT1/cmr/m/n/1
+2 ) me-mas-tik-an da-ta ter-se-but ak-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1737--1738
+\OT1/cmr/m/n/12 an di-ha-pus, ke-mu-di-an pro-ses-nya ber-lan-jut de-ngan me-ma
+ng-gil
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 1737--1738
+\OT1/cmtt/m/n/12 RemoveRoleProgressDialogComponent\OT1/cmr/m/n/12 , yang di da-
+lam-nya ak-an meng-
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 1739--1740
+[]\OT1/cmr/m/n/12 Di da-lam fung-si \OT1/cmtt/m/n/12 removeRole() \OT1/cmr/m/n/
+12 mi-lik \OT1/cmtt/m/n/12 RolesService\OT1/cmr/m/n/12 , pro-ses-nya ak-an
+ []
+
+[93 <./resources/seq-del-role.png>]
+<./resources/seq-list-user-role.png, id=441, 1165.35374pt x 402.50375pt>
+File: ./resources/seq-list-user-role.png Graphic file (type png)
+<use ./resources/seq-list-user-role.png>
+Package pdftex.def Info: ./resources/seq-list-user-role.png  used on input line
+ 1754.
+(pdftex.def)             Requested size: 418.36942pt x 144.50201pt.
+ [94 <./resources/seq-list-user-role.png>]
+Underfull \hbox (badness 4518) in paragraph at lines 1763--1764
+\OT1/cmr/m/n/12 di-tin-dak lan-ju-ti de-ngan ak-ses ke \OT1/cmr/m/it/12 me-thod
+ \OT1/cmtt/m/n/12 getAllUserRole() \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1770
+[]\OT1/cmr/m/n/12 Hasil \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 da-ri \OT1/
+cmr/m/it/12 re-so-ur-ce se-rver \OT1/cmr/m/n/12 ke-mu-di-an di-ki-rimk-an oleh
+ []
+
+<./resources/seq-add-user-role.png, id=446, 1175.39125pt x 367.3725pt>
+File: ./resources/seq-add-user-role.png Graphic file (type png)
+<use ./resources/seq-add-user-role.png>
+Package pdftex.def Info: ./resources/seq-add-user-role.png  used on input line 
+1778.
+(pdftex.def)             Requested size: 418.36942pt x 130.76288pt.
+[95]
+Underfull \hbox (badness 10000) in paragraph at lines 1785--1786
+\OT1/cmr/m/n/12 ke-ti-ka di-pang-gil ak-an me-la-kuk-an ak-ses ke fung-si \OT1/
+cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 1785--1786
+\OT1/cmr/m/n/12 me-la-kuk-an \OT1/cmr/m/it/12 re-qu-est \OT1/cmr/m/n/12 ke \OT1
+/cmr/m/it/12 re-so-ur-ce se-rver \OT1/cmr/m/n/12 me-la-lui \OT1/cmr/m/it/12 me-
+thod \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-lik
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 1789--1790
+[]\OT1/cmr/m/n/12 Setelah pro-ses simp-an da-ta ber-ha-sil ter-ca-tat da-lam si
+s-tem ba-sis da-
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 1789--1790
+\OT1/cmr/m/n/12 ta, \OT1/cmtt/m/n/12 UserRoleRepo \OT1/cmr/m/n/12 ak-an meng-em
+-ba-lik-an ni-lai da-lam ben-tuk ob-jek
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 1791--1792
+[]\OT1/cmr/m/n/12 Setelah \OT1/cmtt/m/n/12 UserRoleController \OT1/cmr/m/n/12 m
+e-ne-ri-ma da-ta da-ri \OT1/cmtt/m/n/12 UserRoleService\OT1/cmr/m/n/12 ,
+ []
+
+[96 <./resources/seq-add-user-role.png>]
+Underfull \hbox (badness 2781) in paragraph at lines 1793--1794
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 UserRoleService \OT1/cmr/m/n/12 ke-mu-d
+i-an ha-sil \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ak-an di-te-rusk-an ke
+ []
+
+<./resources/seq-del-user-role.png, id=454, 1155.31625pt x 397.485pt>
+File: ./resources/seq-del-user-role.png Graphic file (type png)
+<use ./resources/seq-del-user-role.png>
+Package pdftex.def Info: ./resources/seq-del-user-role.png  used on input line 
+1802.
+(pdftex.def)             Requested size: 418.36942pt x 143.93753pt.
+[97 <./resources/seq-del-user-role.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1815--1816
+[]\OT1/cmr/m/n/12 Kemudian \OT1/cmtt/m/n/12 UserRoleController \OT1/cmr/m/n/12 
+ak-an mem-be-rik-an \OT1/cmtt/m/n/12 response \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1815--1816
+\OT1/cmr/m/n/12 apli-ka-si kli-en, me-la-lui \OT1/cmtt/m/n/12 UserRoleService \
+OT1/cmr/m/n/12 ka-re-na se-be-lum-nya me-
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 1815--1816
+\OT1/cmr/m/n/12 la-kuk-an \OT1/cmr/m/it/12 re-qu-est\OT1/cmr/m/n/12 . Da-ri \OT
+1/cmtt/m/n/12 UserRoleService\OT1/cmr/m/n/12 , da-ta ak-an di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 1815--1816
+\OT1/cmtt/m/n/12 RemoveUserRoleProgressDialogComponent \OT1/cmr/m/n/12 da-lam b
+en-tuk \OT1/cmtt/m/n/12 Observable\OT1/cmr/m/n/12 ,
+ []
+
+<./resources/seq-list-client.png, id=460, 1275.76625pt x 412.54124pt>
+File: ./resources/seq-list-client.png Graphic file (type png)
+<use ./resources/seq-list-client.png>
+Package pdftex.def Info: ./resources/seq-list-client.png  used on input line 18
+24.
+(pdftex.def)             Requested size: 418.36942pt x 135.28293pt.
+[98]
+Underfull \hbox (badness 2205) in paragraph at lines 1833--1834
+\OT1/cmr/m/it/12 rver \OT1/cmr/m/n/12 me-la-lui \OT1/cmr/m/it/12 me-thod \OT1/c
+mtt/m/n/12 getAllClient() \OT1/cmr/m/n/12 mi-lik \OT1/cmtt/m/n/12 OauthClientCo
+ntroller\OT1/cmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
+\OT1/cmr/m/n/12 Da-ri \OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 ke
+-mu-di-an me-la-kuk-an ak-ses ke \OT1/cmr/m/it/12 me-
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 1833--1834
+\OT1/cmr/m/it/12 thod \OT1/cmtt/m/n/12 getAllClient() \OT1/cmr/m/n/12 mi-lik \O
+T1/cmtt/m/n/12 OauthClientDetailsService\OT1/cmr/m/n/12 , se-lan-jut-nya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+[]\OT1/cmr/m/n/12 Setelah pe-ngam-bil-an da-ta da-ri sis-tem ba-sis da-ta ber-h
+a-sil, ke-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+\OT1/cmr/m/n/12 mu-di-an ni-lai ak-an di-kem-ba-lik-an da-ri \OT1/cmtt/m/n/12 O
+authClientDetailsRepo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+\OT1/cmr/m/n/12 ke \OT1/cmtt/m/n/12 OauthClientDetailsService \OT1/cmr/m/n/12 d
+a-lam ben-tuk ob-jek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1836
+\OT1/cmtt/m/n/12 List<OauthClientDetails>\OT1/cmr/m/n/12 , yang ke-mu-di-an di-
+te-rusk-an oleh
+ []
+
+[99 <./resources/seq-list-client.png>]
+Underfull \hbox (badness 1910) in paragraph at lines 1837--1838
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 k
+e-mu-di-an me-la-kuk-an \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ke apli-
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 1837--1838
+\OT1/cmr/m/n/12 ka-si kli-en me-la-lui \OT1/cmtt/m/n/12 OauthClientService \OT1
+/cmr/m/n/12 ka-re-na se-be-lum-nya me-la-kuk-
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 1837--1838
+\OT1/cmr/m/n/12 an \OT1/cmr/m/it/12 re-qu-est\OT1/cmr/m/n/12 , ni-lai yang di-b
+e-rik-an ke apli-ka-si kli-en ber-ben-tuk ob-jek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1839--1840
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 OauthClientService\OT1/cmr/m/n/12 , ha-
+sil \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 1839--1840
+\OT1/cmtt/m/n/12 ListOauthClientComponent \OT1/cmr/m/n/12 da-lam ben-tuk \OT1/c
+mtt/m/n/12 Observable \OT1/cmr/m/n/12 yang ke-mu-di-
+ []
+
+<./resources/seq-add-client.png, id=468, 1968.35374pt x 683.55376pt>
+File: ./resources/seq-add-client.png Graphic file (type png)
+<use ./resources/seq-add-client.png>
+Package pdftex.def Info: ./resources/seq-add-client.png  used on input line 184
+8.
+(pdftex.def)             Requested size: 418.36942pt x 145.28194pt.
+[100 <./resources/seq-add-client.png>]
+Underfull \hbox (badness 3333) in paragraph at lines 1855--1856
+[]\OT1/cmr/m/n/12 Setelah peng-gu-na (\OT1/cmr/m/it/12 re-so-ur-ce owner\OT1/cm
+r/m/n/12 ) me-la-kuk-an pe-ngi-si-an da-ta apli-
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 1855--1856
+\OT1/cmr/m/n/12 ka-si kli-en ke-mu-di-an me-nyim-pan-nya, ma-ka fung-si \OT1/cm
+tt/m/n/12 onSimpanClick()
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 1855--1856
+\OT1/cmr/m/n/12 pa-da \OT1/cmtt/m/n/12 AddOauthClientComponent \OT1/cmr/m/n/12 
+ak-an ter-pi-cu, ke-mu-di-an me-mang-gil
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 1857--1858
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 CheckOauthClientProgressDialogComponent
+ \OT1/cmr/m/n/12 ke-mu-di-an me-la-kuk-
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 1857--1858
+\OT1/cmr/m/n/12 an ak-ses ke fung-si \OT1/cmtt/m/n/12 findById() \OT1/cmr/m/n/1
+2 mi-lik \OT1/cmtt/m/n/12 OauthClientService\OT1/cmr/m/n/12 . Da-ri
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 1859--1860
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 k
+e-mu-di-an me-la-kuk-an ak-ses ke \OT1/cmr/m/it/12 me-thod
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 1861--1862
+[]\OT1/cmr/m/n/12 Setelah pro-ses pen-ca-ri-an da-ta pa-da sis-tem ba-sis da-ta
+ se-le-sai, ma-ka
+ []
+
+[101]
+Underfull \hbox (badness 2495) in paragraph at lines 1869--1870
+\OT1/cmr/m/n/12 ak-an meng-em-ba-lik-an ni-lai da-lam ben-tuk ob-jek \OT1/cmtt/
+m/n/12 OauthClientDetails
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1869--1870
+\OT1/cmr/m/n/12 ke \OT1/cmtt/m/n/12 OauthClientDetailsService\OT1/cmr/m/n/12 , 
+yang ke-mu-di-an di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 1871--1872
+\OT1/cmr/m/n/12 an \OT1/cmr/m/it/12 re-qu-est\OT1/cmr/m/n/12 . Da-ri \OT1/cmtt/
+m/n/12 OauthClientService\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 res-pon-se \OT1/cmr
+/m/n/12 ak-an di-te-rusk-an ke
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 1871--1872
+\OT1/cmr/m/n/12 yang pa-da akhir-nya ak-an me-la-kuk-an pem-ba-ru-an da-ta ta-b
+el pa-da
+ []
+
+<./resources/seq-edit-client.png, id=477, 1627.07875pt x 452.69125pt>
+File: ./resources/seq-edit-client.png Graphic file (type png)
+<use ./resources/seq-edit-client.png>
+Package pdftex.def Info: ./resources/seq-edit-client.png  used on input line 18
+80.
+(pdftex.def)             Requested size: 418.36942pt x 116.39833pt.
+[102]
+Underfull \hbox (badness 10000) in paragraph at lines 1885--1886
+\OT1/cmr/m/n/12 mi-lik \OT1/cmtt/m/n/12 ListOauthClientComponent \OT1/cmr/m/n/1
+2 yang di da-lam-nya me-mang-gil
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 1885--1886
+\OT1/cmtt/m/n/12 EditOauthClientComponent\OT1/cmr/m/n/12 , sam-pai si-ni peng-g
+u-na (\OT1/cmtt/m/n/12 resource owner\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 6493) in paragraph at lines 1889--1890
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent 
+\OT1/cmr/m/n/12 ke-mu-di-an me-la-kuk-
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 1889--1890
+\OT1/cmr/m/n/12 an ak-ses ke fung-si \OT1/cmtt/m/n/12 save \OT1/cmr/m/n/12 mi-l
+ik \OT1/cmtt/m/n/12 OauthClientService\OT1/cmr/m/n/12 , se-te-lah itu
+ []
+
+[103 <./resources/seq-edit-client.png>]
+Underfull \hbox (badness 1454) in paragraph at lines 1893--1894
+\OT1/cmr/m/n/12 tuk ob-jek da-ri \OT1/cmtt/m/n/12 OauthClientDetails \OT1/cmr/m
+/n/12 ke \OT1/cmtt/m/n/12 OauthClientDetailsService\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
+\OT1/cmr/m/n/12 yang ke-mu-di-an di-te-rusk-an ke \OT1/cmtt/m/n/12 OauthClientC
+ontroller\OT1/cmr/m/n/12 . Da-ri
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 1893--1894
+\OT1/cmtt/m/n/12 OauthClientController \OT1/cmr/m/n/12 ke-mu-di-an mem-be-rik-a
+n \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 ke apli-ka-si
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 1895--1896
+[]\OT1/cmr/m/n/12 Dari \OT1/cmtt/m/n/12 OauthClientService \OT1/cmr/m/n/12 ke-m
+u-di-an me-ne-rusk-an ha-sil \OT1/cmr/m/it/12 res-pon-se \OT1/cmr/m/n/12 da-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+\OT1/cmr/m/n/12 ri \OT1/cmr/m/it/12 re-so-ur-ce se-rver \OT1/cmr/m/n/12 ke \OT1
+/cmtt/m/n/12 SaveOauthClientProgressDialogComponent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+\OT1/cmr/m/n/12 da-lam ben-tuk \OT1/cmtt/m/n/12 Observable\OT1/cmr/m/n/12 , yan
+g ke-mu-di-an di-te-rusk-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+\OT1/cmr/m/n/12 an oleh \OT1/cmtt/m/n/12 SaveOauthClientProgressDialogComponent
+ \OT1/cmr/m/n/12 ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+\OT1/cmtt/m/n/12 EditOauthClientComponent \OT1/cmr/m/n/12 da-lam ben-tuk se-bu-
+ah sta-tus, de-ngan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+\OT1/cmr/m/n/12 da-sar sta-tus ini, \OT1/cmtt/m/n/12 EditOauthClientComponent \
+OT1/cmr/m/n/12 ak-an me-mang-gil
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 1895--1896
+\OT1/cmtt/m/n/12 InfoDialogComponent \OT1/cmr/m/n/12 un-tuk mem-be-rik-an in-fo
+r-ma-si ke-pa-da peng-gu-na
+ []
+
+<./resources/seq-del-client.png, id=486, 1406.25375pt x 423.5825pt>
+File: ./resources/seq-del-client.png Graphic file (type png)
+<use ./resources/seq-del-client.png>
+Package pdftex.def Info: ./resources/seq-del-client.png  used on input line 190
+4.
+(pdftex.def)             Requested size: 418.36942pt x 126.01573pt.
+[104]
+Underfull \hbox (badness 4846) in paragraph at lines 1909--1910
+[]\OT1/cmr/m/n/12 Penjelasan da-ri di-a-gram ter-se-but ada-lah se-per-ti ber-i
+-kut, per-ta-ma
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 1909--1910
+\OT1/cmr/m/n/12 peng-gu-na me-la-kuk-an ak-ses ke fi-tur ha-pus da-ta apli-ka-s
+i kli-en me-
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 1909--1910
+\OT1/cmr/m/n/12 la-lui fung-si \OT1/cmtt/m/n/12 onHapusClick() \OT1/cmr/m/n/12 
+mi-lik \OT1/cmtt/m/n/12 ListOauthClientComponent\OT1/cmr/m/n/12 , ke-
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 1909--1910
+\OT1/cmr/m/n/12 mu-di-an da-ri \OT1/cmtt/m/n/12 ListOauthClientComponent \OT1/c
+mr/m/n/12 me-la-kuk-an pe-mang-gil-an ke
+ []
+
+[105 <./resources/seq-del-client.png>]
+Underfull \hbox (badness 2495) in paragraph at lines 1917--1918
+\OT1/cmr/m/n/12 me-ne-rusk-an ha-sil-nya ke \OT1/cmtt/m/n/12 RemoveOauthClientP
+rogressDialogComponent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1917--1918
+\OT1/cmr/m/n/12 da-lam ben-tuk \OT1/cmtt/m/n/12 Observable\OT1/cmr/m/n/12 , yan
+g ke-mu-di-an ak-an me-mang-gil
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 1917--1918
+\OT1/cmtt/m/n/12 InfoDialogComponent \OT1/cmr/m/n/12 un-tuk mem-be-rik-an in-fo
+r-ma-si apa-kah da-ta-nya
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1920
+[]\OT1/cmr/m/n/12 Setelah in-for-ma-si-nya ber-ha-sil di-te-ri-ma peng-gu-na, k
+e-mu-di-an
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 1919--1920
+\OT1/cmtt/m/n/12 InfoDialogComponent \OT1/cmr/m/n/12 ak-an me-mi-cu per-u-bah-a
+n isi ta-bel daf-tar apli-
+ []
+
+<./resources/main-ui.png, id=494, 834.11626pt x 502.87875pt>
+File: ./resources/main-ui.png Graphic file (type png)
+<use ./resources/main-ui.png>
+Package pdftex.def Info: ./resources/main-ui.png  used on input line 1934.
+(pdftex.def)             Requested size: 418.36942pt x 252.2291pt.
+[106]
+<./resources/login-ui.png, id=498, 834.11626pt x 502.87875pt>
+File: ./resources/login-ui.png Graphic file (type png)
+<use ./resources/login-ui.png>
+Package pdftex.def Info: ./resources/login-ui.png  used on input line 1945.
+(pdftex.def)             Requested size: 418.36942pt x 252.2291pt.
+ [107 <./resources/main-ui.png>]
+<./resources/menu-admin-ui.png, id=503, 834.11626pt x 553.06625pt>
+File: ./resources/menu-admin-ui.png Graphic file (type png)
+<use ./resources/menu-admin-ui.png>
+Package pdftex.def Info: ./resources/menu-admin-ui.png  used on input line 1956
+.
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [108 <./resources/login-ui.png>]
+<./resources/menu-user-ui.png, id=508, 834.11626pt x 553.06625pt>
+File: ./resources/menu-user-ui.png Graphic file (type png)
+<use ./resources/menu-user-ui.png>
+Package pdftex.def Info: ./resources/menu-user-ui.png  used on input line 1967.
+
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [109 <./resources/menu-admin-ui.png>]
+<./resources/manage-user-main-ui.png, id=514, 834.11626pt x 553.06625pt>
+File: ./resources/manage-user-main-ui.png Graphic file (type png)
+<use ./resources/manage-user-main-ui.png>
+Package pdftex.def Info: ./resources/manage-user-main-ui.png  used on input lin
+e 1978.
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [110 <./resources/menu-user-ui.png>]
+<./resources/list-user-ui.png, id=519, 834.11626pt x 553.06625pt>
+File: ./resources/list-user-ui.png Graphic file (type png)
+<use ./resources/list-user-ui.png>
+Package pdftex.def Info: ./resources/list-user-ui.png  used on input line 1989.
+
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [111 <./resources/manage-user-main-ui.png>]
+<./resources/add-user-ui.png, id=524, 834.11626pt x 553.06625pt>
+File: ./resources/add-user-ui.png Graphic file (type png)
+<use ./resources/add-user-ui.png>
+Package pdftex.def Info: ./resources/add-user-ui.png  used on input line 2000.
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [112 <./resources/list-user-ui.png>]
+<./resources/edit-user-ui.png, id=529, 834.11626pt x 553.06625pt>
+File: ./resources/edit-user-ui.png Graphic file (type png)
+<use ./resources/edit-user-ui.png>
+Package pdftex.def Info: ./resources/edit-user-ui.png  used on input line 2011.
+
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [113 <./resources/add-user-ui.png>]
+<./resources/list-role-ui.png, id=534, 834.11626pt x 553.06625pt>
+File: ./resources/list-role-ui.png Graphic file (type png)
+<use ./resources/list-role-ui.png>
+Package pdftex.def Info: ./resources/list-role-ui.png  used on input line 2022.
+
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [114 <./resources/edit-user-ui.png>]
+<./resources/add-role-ui.png, id=539, 834.11626pt x 553.06625pt>
+File: ./resources/add-role-ui.png Graphic file (type png)
+<use ./resources/add-role-ui.png>
+Package pdftex.def Info: ./resources/add-role-ui.png  used on input line 2033.
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [115 <./resources/list-role-ui.png>]
+<./resources/edit-role-ui.png, id=545, 834.11626pt x 553.06625pt>
+File: ./resources/edit-role-ui.png Graphic file (type png)
+<use ./resources/edit-role-ui.png>
+Package pdftex.def Info: ./resources/edit-role-ui.png  used on input line 2044.
+
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [116 <./resources/add-role-ui.png>]
+<./resources/assign-role-ui.png, id=550, 834.11626pt x 553.06625pt>
+File: ./resources/assign-role-ui.png Graphic file (type png)
+<use ./resources/assign-role-ui.png>
+Package pdftex.def Info: ./resources/assign-role-ui.png  used on input line 205
+5.
+(pdftex.def)             Requested size: 418.36942pt x 277.40167pt.
+ [117 <./resources/edit-role-ui.png>]
+<./resources/list-client-ui.png, id=555, 834.11626pt x 633.36626pt>
+File: ./resources/list-client-ui.png Graphic file (type png)
+<use ./resources/list-client-ui.png>
+Package pdftex.def Info: ./resources/list-client-ui.png  used on input line 206
+6.
+(pdftex.def)             Requested size: 418.36942pt x 317.67778pt.
+ [118 <./resources/assign-role-ui.png>]
+<./resources/add-client-ui.png, id=560, 834.11626pt x 733.74126pt>
+File: ./resources/add-client-ui.png Graphic file (type png)
+<use ./resources/add-client-ui.png>
+Package pdftex.def Info: ./resources/add-client-ui.png  used on input line 2077
+.
+(pdftex.def)             Requested size: 418.36942pt x 368.02292pt.
+ [119 <./resources/list-client-ui.png>]
+<./resources/edit-client-ui.png, id=565, 834.11626pt x 733.74126pt>
+File: ./resources/edit-client-ui.png Graphic file (type png)
+<use ./resources/edit-client-ui.png>
+Package pdftex.def Info: ./resources/edit-client-ui.png  used on input line 208
+8.
+(pdftex.def)             Requested size: 418.36942pt x 368.02292pt.
+ [120 <./resources/add-client-ui.png>] [121 <./resources/edit-client-ui.png>]
+<./resources/gantt-chart.png, id=575, 1573.88pt x 311.1625pt>
+File: ./resources/gantt-chart.png Graphic file (type png)
+<use ./resources/gantt-chart.png>
+Package pdftex.def Info: ./resources/gantt-chart.png  used on input line 2121.
+(pdftex.def)             Requested size: 418.36942pt x 82.7093pt.
+ [122 <./resources/gantt-chart.png (PNG copy)>] (./00.book.aux) ) 
+Here is how much of TeX's memory you used:
+ 4680 strings out of 492649
+ 76789 string characters out of 6129622
+ 140710 words of memory out of 5000000
+ 8415 multiletter control sequences out of 15000+600000
+ 6588 words of font info for 24 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,5n,32p,763b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 00.book.pdf (122 pages, 2922671 bytes).
+PDF statistics:
+ 604 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 456 words of extra memory for PDF output out of 10000 (max. 10000000)
+
